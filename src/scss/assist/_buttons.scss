@@ -2,13 +2,13 @@
 @import "src/scss/common/mixins";
 
 .btn-blue {
-  @include btn($blue, white, $blue, $blue, white, $blue);
+  @include btn($blue, white, $blue, $blue, white);
 }
 
 .btn-blue-def {
-  @include btn(transparent, $blue, $blue, transparent, $blue, $blue);
+  @include btn(transparent, $blue, $blue, transparent, $blue);
 }
 
 .btn-gray-def {
-  @include btn(transparent, $secondary-color, $secondary-color, white, $blue, $blue);
+  @include btn(transparent, $secondary-color, $secondary-color, white, $blue);
 }

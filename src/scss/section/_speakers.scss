@@ -5,12 +5,19 @@
   padding: 80px 0;
   background: #F6F8F9;
 }
+
 .speakers-slider {
   position: relative;
   padding-bottom: 80px;
 }
+
 .speakers-slider__slide {
   box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  transition: all .5s ease;
+
+  &:hover {
+    box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+  }
 
   a {
     text-decoration: none;

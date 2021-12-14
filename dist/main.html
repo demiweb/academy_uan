@@ -17,11 +17,20 @@
 </head>
 <body>
 
+<!-- Подключение header для пользователей которые не залогинились-->
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
             <div class="header__logo">
                 <img src="img/svg/header-logo.svg" alt="logo">
+            </div>
+            <div class="header__cart">
+                <a href="#">
+                    Cart
+                    <span class="no-empty">
+                             2
+                         </span>
+                </a>
             </div>
             <div class="header__menu">
                 <span>
@@ -29,28 +38,36 @@
                 </span>
             </div>
             <div class="menu__content">
-             <div class="menu__wrapper active">
-                 <ul class="header__nav">
-                     <li class="nav__item">
-                         <a href="#">Topics</a>
-                     </li>
-                     <li class="nav__item">
-                         <a href="#">Speakers</a>
-                     </li>
-                     <li class="nav__item">
-                         <a href="#">News</a>
-                     </li>
-                     <li class="nav__item">
-                         <a href="#">Contacts</a>
-                     </li>
-                 </ul>
-                 <div class="header__btn">
-                     <a href="#" class="btn-blue">Sign Up</a>
-                 </div>
-                 <div class="header__language">
-                     <img src="img/language-icon.png" alt="language_eu">
-                 </div>
-             </div>
+                <div class="menu__wrapper active">
+                    <ul>
+                        <li>
+                            <a href="#">Topics</a>
+                        </li>
+                        <li>
+                            <a href="#">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="header__cart">
+                        <a href="#">
+                            Cart
+                            <span class="no-empty">
+                             2
+                         </span>
+                        </a>
+                    </div>
+                    <div class="header__btn">
+                        <a href="#" class="btn-blue login">Sign Up</a>
+                    </div>
+                    <div class="header__language">
+                        <img src="img/language-icon.png" alt="language_eu">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -263,282 +280,257 @@
                 <div class="swiper-wrapper courses-slider__wrapper">
 
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
                     <div class="swiper-slide courses-slider__slide">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
-                                </div>
-                                <span>
+                            <div class="slide__img">
+                                <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                            </div>
+                            <span>
                                         Topic: Vascular
                                     </span>
-                                <div>
-                                    Difficult airways
-                                </div>
+                            <div>
+                                Difficult airways
+                            </div>
+                            <p>
+                                All intubation techniques will be practiced on professional manikins that
+                                simulate complex airways.
+                            </p>
+                            <div class="slide__info">
+                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
                                 <p>
-                                    All intubation techniques will be practiced on professional manikins that
-                                    simulate complex airways.
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                              stroke-width="1.33333" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                    3 days
                                 </p>
-                                <div class="card__info">
-                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                                    <p>
-                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                                  stroke-width="1.33333" stroke-linecap="round"
-                                                  stroke-linejoin="round"/>
-                                        </svg>
-                                        3 days
-                                    </p>
-                                    <span>
+                                <span>
                                             free
                                         </span>
-                                </div>
-                                <div class="card__icon">
-                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                                </div>
-                                <div class="card__btn">
-                                    <button class="btn-gray-def">Details</button>
-                                    <button class="btn-blue">Add to cart</button>
-                                </div>
                             </div>
-                        </a>
+                            <div class="slide__icon">
+                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                            </div>
+                            <div class="slide__btn">
+                                <a href="#" class="btn-gray-def">Details</a>
+                                <button class="btn-blue">Add to cart</button>
+                            </div>
                     </div>
-
                 </div>
                 <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
             </div>
@@ -851,7 +843,7 @@
         <div class="container">
             <div class="our-people__wrapper">
                 <div class="our-people-bg">
-                    <img src="img/our-people-bg.png" alt="our-people-bg">
+                    <img src="img/svg/our-people-bg.svg" alt="our-people-bg">
                 </div>
                 <div class="our-people__icons">
                     <img src="img/our-people-icon-1.png" alt="icon" class="big-icon">
@@ -883,10 +875,10 @@
 
 <footer class="footer">
     <div class="footer-bg-left">
-        <img src="img/footer-bg-left.png" alt="footer-bg-left">
+        <img src="img/svg/footer-bg-left.svg" alt="footer-bg-left">
     </div>
     <div class="footer-bg-right">
-        <img src="img/footer-bg-right.png" alt="footer-bg-fight">
+        <img src="img/svg/footer-bg-right.svg" alt="footer-bg-right">
     </div>
     <div class="container">
         <div class="footer__top">
@@ -902,7 +894,7 @@
                                fill="white"/>
                      </svg>
                 </span>
-                <ul class="footer__list">
+                <ul>
                     <li><a href="#">Functional</a></li>
                     <li><a href="#">Neuro - oncology</a></li>
                     <li><a href="#">Radiosurgery</a></li>
@@ -923,7 +915,7 @@
                               fill="white"/>
                     </svg>
                 </span>
-                <ul class="footer__list">
+                <ul>
                     <li><a href="#">Topics</a></li>
                     <li><a href="#">Speakers</a></li>
                     <li><a href="#">News</a></li>
@@ -939,7 +931,7 @@
                               fill="white"/>
                     </svg>
                 </span>
-                <ul class="footer__list">
+                <ul>
                     <li><a href="tel:">+38 (092) 38 283 93</a></li>
                     <li><a href="mailto:">AcademyUan@gmail.com</a></li>
                     <li><a href="#">Contacts</a></li>

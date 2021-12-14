@@ -52,6 +52,16 @@
     .content__btn {
       justify-content: center;
       margin-bottom: 50px;
+
+      a {
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+      }
     }
   }
 
@@ -77,6 +87,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .topics-slider__slide {
+    margin-top: 0 !important;
+  }
   .hero__content {
     > h1 {
       font-size: 29px;
@@ -103,5 +116,7 @@
 }
 
 @media screen and (max-width: 575px) {
-
+  .courses-slider__slide {
+    padding: 20px 20px 43px;
+  }
 }

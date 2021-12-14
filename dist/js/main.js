@@ -1,26 +1,7 @@
-// new Swiper('.topics-mob-slider', {
-//     direction: 'horizontal',
-//     loop: true,
-//     // autoplay: true,
-//     slidesPerView: 3,
-//     spaceBetween: 10,
-//     pagination: {
-//         el: '.topics-mob-slider__pagination',
-//         clickable: true,
-//     },
-//
-//     breakpoints: {
-//         767: {
-//             slidesPerView: 2,
-//         },
-//         0: {
-//             slidesPerView: 1
-//         }
-//     },
-// });
 new Swiper(".topics-slider", {
     pagination: {
         el: ".topics-slider__pagination",
+        clickable: true,
     },
 
     breakpoints: {
@@ -162,23 +143,6 @@ new Swiper('.themes-slider', {
     },
 });
 
-// let allLazyLoad = [...document.querySelectorAll('.lazyload')];
-//
-// function allLozadImg() {
-//     allLazyLoad.forEach((el) => {
-//         const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
-//         observer.observe();
-//         el.addEventListener('load', () => {
-//             el.classList.add('is-loaded')
-//         })
-//         // if (el.loaded()) {
-//         //     el.classList.add('is-loaded');
-//         // }
-//     })
-// }
-//
-// allLozadImg();
-
 const menu = document.querySelector('.header__menu')
 
 menu.addEventListener('click', function () {
@@ -191,10 +155,11 @@ menu.addEventListener('click', function () {
     if (this.classList.contains('open')) {
         menuContent.classList.add('active')
         body.classList.add('no-scroll')
-
+        this.classList.add('open')
     } else {
         menuContent.classList.remove('active')
         body.classList.remove('no-scroll')
+        this.classList.remove('open')
     }
 })
 
