@@ -1,0 +1,159 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.our-people {
+  position: relative;
+
+  margin: 150px 0;
+
+
+  .section-head {
+    justify-content: center;
+  }
+
+  .our-people__wrapper {
+    position: relative;
+    height: 647px;
+    width: 100%;
+    margin: auto;
+
+    .our-people-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .our-people__icons {
+      .small-icon, .medium-icon, .big-icon, .small-circle, .big-circle {
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .big-icon {
+        width: 113px;
+        height: 113px;
+      }
+
+      .medium-icon {
+        width: 85px;
+        height: 85px;
+      }
+
+      .small-icon {
+        width: 63px;
+        height: 63px;
+      }
+
+      .small-circle {
+        width: 20px;
+        height: 20px;
+        background: $blue;
+      }
+
+      .big-circle {
+        width: 30px;
+        height: 30px;
+        background: $blue;
+      }
+
+      img {
+        &:nth-child(1) {
+          top: 12.05%;
+          left: 5.96%;
+        }
+
+        &:nth-child(2) {
+          top: 40.34%;
+          left: 15.89%;
+        }
+
+        &:nth-child(3) {
+          top: 12.05%;
+          left: 32.24%;
+        }
+
+        &:nth-child(4) {
+          top: 22.87%;
+          right: 47.05%;
+        }
+
+        &:nth-child(5) {
+          top: 14.21%;
+          right: 31.78%;
+        }
+
+        &:nth-child(6) {
+          top: 25.96%;
+          right: 8.99%;
+        }
+      }
+      div {
+        &:nth-child(7) {
+          top: 7.57%;
+          left: 17.05%;
+        }
+
+        &:nth-child(8) {
+          top: 31.68%;
+          left: 24.34%;
+        }
+
+        &:nth-child(9) {
+          top: 44.97%;
+          left: 43.56%;
+        }
+
+        &:nth-child(10) {
+          top: 7.41%;
+          right: 45.89%;
+        }
+
+        &:nth-child(11) {
+          top: 8.96%;
+          right: 24.72%;
+        }
+
+        &:nth-child(12) {
+          top: 40.34%;
+          right: 22.40%;
+        }
+      }
+    }
+
+    .our-people__body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      a {
+        width: 179px;
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

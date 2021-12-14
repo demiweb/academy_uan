@@ -1,0 +1,153 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.course-details {
+  .course-details__wrapper {
+    margin: 50px 0;
+    .course-details__head {
+      display: flex;
+      margin-bottom: 100px;
+      .head__img {
+        width: 299px;
+        height: 189px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .head__text {
+        width: auto;
+        margin-left: 30px;
+        span {
+
+        }
+
+        div {
+
+        }
+
+        p {
+
+        }
+
+        .head__info {
+          div {
+
+          }
+
+          p {
+            svg {
+
+            }
+          }
+
+          span {
+
+          }
+        }
+      }
+
+      .head__btn {
+        margin: auto 101px 0;
+        a {
+          width: 179px;
+          height: 50px;
+        }
+      }
+    }
+
+    .course-details__about {
+      div {
+        h3 {
+
+        }
+
+        p {
+
+        }
+      }
+    }
+
+    .course-details__schedule {
+      div {
+        h3 {
+
+        }
+
+        ol {
+          li {
+            p {
+
+            }
+          }
+        }
+      }
+    }
+
+    .course-details__speakers {
+      div {
+        h3 {
+
+        }
+
+        .speaker {
+          .speaker__img {
+            img {
+
+            }
+          }
+
+          .speaker__description {
+            span {
+
+            }
+
+            p {
+
+            }
+
+            div {
+              div {
+                img {
+
+                }
+
+                span {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .course-details__faq {
+      div {
+        h3 {
+
+        }
+        .accordion {
+          .accordion-btn {
+            span {
+
+            }
+            svg {
+
+            }
+          }
+          .accordion-content {
+
+          }
+        }
+      }
+    }
+
+    .course-details__btn {
+      a {
+
+      }
+    }
+  }
+}

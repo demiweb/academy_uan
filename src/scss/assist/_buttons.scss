@@ -1,0 +1,14 @@
+@import "src/scss/common/vars";
+@import "src/scss/common/mixins";
+
+.btn-blue {
+  @include btn($blue-gradient, white, $blue, $blue, $green-gradient);
+}
+
+.btn-blue-def {
+  @include btn(transparent, $blue, $blue, white, #7155cb);
+}
+
+.btn-gray-def {
+  @include btn(transparent, $secondary-color, $secondary-color, white, #7155cb);
+}

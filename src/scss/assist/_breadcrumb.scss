@@ -1,0 +1,29 @@
+@import '../common/vars';
+
+.breadcrumb {
+  margin-bottom: 9px;
+  ol {
+    list-style: none;
+    display: flex;
+    li {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        &:after {
+          content: url("../img/svg/arr-right.svg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $blue;
+        span {
+        }
+      }
+    }
+  }
+}

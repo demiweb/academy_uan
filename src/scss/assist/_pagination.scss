@@ -1,0 +1,70 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        transition: all .5s ease;
+        &:hover {
+          color: $blue;
+        }
+        &.prev,
+        &.next{
+
+          &:hover {
+            transition: all .5s ease;
+            svg {
+              path {
+                stroke: $blue;
+              }
+            }
+          }
+        }
+      }
+
+      .current {
+        background: $primary-color;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        width: 100%;
+        height: 100%;
+        transition: all .5s ease;
+
+        &:hover {
+          opacity: .7;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      span {
+        color: $secondary-color;
+        transition: all .5s ease;
+        &:hover {
+          color: $blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

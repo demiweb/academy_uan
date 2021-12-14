@@ -1,0 +1,27 @@
+@import "layout";
+
+// Common
+@import "common/additionally";
+
+// Assist
+@import "assist/buttons";
+@import "assist/slider";
+@import "assist/pagination";
+@import "assist/breadcrumb";
+
+// Header
+@import "header/header";
+
+// Footer
+@import "footer/footer";
+
+// Section
+@import "section/hero";
+@import "section/topics";
+@import "section/courses";
+@import "section/speakers";
+@import "section/news";
+@import "section/our-people";
+@import "section/course-details";
+
+@import "media";

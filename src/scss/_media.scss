@@ -1,0 +1,130 @@
+@media screen and (max-width: 1399px) {
+  .hero__wrapper {
+    justify-content: space-between;
+  }
+
+  .hero__content {
+    max-width: 60%;
+  }
+
+  .hero__img {
+    width: 400px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .topics__wrapper {
+    > a {
+      flex: 0 0 calc((100% / 3) - (90px / 3));
+    }
+  }
+
+  .courses-slider__slide {
+    a {
+      .card {
+        .card__btn {
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            width: 47%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__img {
+    width: 100%;
+    height: auto;
+  }
+  .topics__wrapper {
+    > a {
+      flex: 0 0 calc((100% / 3) - (90px / 4));
+    }
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    height: auto;
+    background: #fff;
+  }
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    > p {
+      margin: 25px auto 40px;
+    }
+
+    .content__btn {
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  .topics {
+    margin: 70px 0;
+  }
+
+  .topics__wrapper {
+    display: none;
+  }
+  .card {
+    .card__img {
+      height: auto;
+    }
+  }
+  .topics-mob-slider {
+    display: block;
+    position: relative;
+    padding-bottom: 80px;
+
+  }
+  .topics-mob-slider__slide {
+    box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+
+    > a {
+      text-decoration: none;
+
+    }
+  }
+  .courses {
+    padding: 70px 0;
+  }
+  .speakers {
+    margin: 70px 0;
+  }
+  .news {
+    margin: 70px 0;
+  }
+  .our-people {
+    margin: 70px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}

@@ -1,0 +1,30 @@
+@mixin btn($bg, $color, $br-color, $h-color, $h-bg, $br: 10px) {
+  background: $bg;
+  color: $color;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: $br;
+  border: 2px solid $br-color;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $h-bg;
+    color: $h-color;
+    background: $h-bg;
+  }
+}
+
+@mixin link($color, $h-color) {
+  text-decoration: none;
+  color: $color;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all .4s ease;
+  &:hover {
+    color: $h-color;
+  }
+}

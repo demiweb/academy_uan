@@ -1,0 +1,35 @@
+@import "vars";
+@import "mixins";
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  a {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    transition: all .4s ease;
+
+    &:hover {
+      color: green;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-head {
+    margin-bottom: 50px;
+  }
+}
+
+
+
