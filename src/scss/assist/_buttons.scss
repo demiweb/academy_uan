@@ -2,13 +2,13 @@
 @import "src/scss/common/mixins";
 
 .btn-blue {
-  @include btn($blue-gradient, white, $blue, $blue, $green-gradient);
+  @include btn($blue, white, $blue, $blue, white, $blue);
 }
 
 .btn-blue-def {
-  @include btn(transparent, $blue, $blue, white, #7155cb);
+  @include btn(transparent, $blue, $blue, transparent, $blue, $blue);
 }
 
 .btn-gray-def {
-  @include btn(transparent, $secondary-color, $secondary-color, white, #7155cb);
+  @include btn(transparent, $secondary-color, $secondary-color, white, $blue, $blue);
 }

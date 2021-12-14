@@ -1,3 +1,6 @@
+@media screen and (max-width: 1439px) {
+}
+
 @media screen and (max-width: 1399px) {
   .hero__wrapper {
     justify-content: space-between;
@@ -18,48 +21,19 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
-  .topics__wrapper {
-    > a {
-      flex: 0 0 calc((100% / 3) - (90px / 3));
-    }
-  }
-
-  .courses-slider__slide {
-    a {
-      .card {
-        .card__btn {
-          display: flex;
-          justify-content: space-between;
-
-          button {
-            width: 47%;
-          }
-        }
-      }
-    }
-  }
-
-}
 
 @media screen and (max-width: 1199px) {
   .hero__img {
     width: 100%;
     height: auto;
   }
-  .topics__wrapper {
-    > a {
-      flex: 0 0 calc((100% / 3) - (90px / 4));
-    }
-  }
-
 }
 
 @media screen and (max-width: 991px) {
   .hero {
-    height: auto;
-    background: #fff;
+    height: 100%;
   }
+
   .hero__wrapper {
     flex-direction: column;
   }
@@ -81,37 +55,18 @@
     }
   }
 
+  .hero__img {
+    margin-bottom: 93px;
+  }
+
   .topics {
-    margin: 70px 0;
-  }
-
-  .topics__wrapper {
-    display: none;
-  }
-  .card {
-    .card__img {
-      height: auto;
-    }
-  }
-  .topics-mob-slider {
-    display: block;
-    position: relative;
-    padding-bottom: 80px;
-
-  }
-  .topics-mob-slider__slide {
-    box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
-
-    > a {
-      text-decoration: none;
-
-    }
-  }
-  .courses {
     padding: 70px 0;
   }
-  .speakers {
+  .courses {
     margin: 70px 0;
+  }
+  .speakers {
+    padding: 70px 0;
   }
   .news {
     margin: 70px 0;
@@ -122,7 +77,29 @@
 }
 
 @media screen and (max-width: 767px) {
+  .hero__content {
+    > h1 {
+      font-size: 29px;
+      line-height: 35px;
+      margin-bottom: 25px;
+    }
 
+    > p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 0;
+    }
+
+    .content__btn {
+      display: flex;
+
+      a {
+        width: 179px;
+        height: 50px;
+        margin-right: 25px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {

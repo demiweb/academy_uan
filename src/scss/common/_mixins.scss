@@ -1,4 +1,4 @@
-@mixin btn($bg, $color, $br-color, $h-color, $h-bg, $br: 10px) {
+@mixin btn($bg, $color, $br-color, $h-bg, $h-color, $h-br-color, $br: 10px) {
   background: $bg;
   color: $color;
   font-weight: 600;
@@ -9,12 +9,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .4s ease;
+  transition: background-color .4s ease, color .4s ease;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    display: inline-block;
+    opacity: 0;
+    pointer-events: all;
+    transition: opacity 0.3s linear;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%);
+  }
+
   &:hover {
     cursor: pointer;
-    border: 2px solid $h-bg;
+    border: 2px solid $h-br-color;
     color: $h-color;
     background: $h-bg;
+
+    &::after {
+      opacity: 1;
+      transition: opacity 0.3s linear;
+    }
   }
 }
 

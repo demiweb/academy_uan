@@ -28,6 +28,16 @@
 @media screen and (max-width: 1200px) {
   .section-head {
     margin-bottom: 50px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .section-head {
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+    }
   }
 }
 

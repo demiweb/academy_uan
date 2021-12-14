@@ -7,61 +7,210 @@
   top: 0;
   left: 0;
   z-index: 100;
+  box-shadow: 0 7px 50px rgba(29, 72, 182, 0.13);
+}
 
+.header__wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .header__wrapper {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header__logo {
+  flex: 0 0 150px;
+  height: 50px;
+  margin-right: auto;
 
-    .header__logo {
-      flex: 0 0 150px;
-      height: 50px;
-      margin-right: auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+.header__menu {
+  display: none;
+}
 
-    .header__nav {
-      flex: 0 0 351px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
+.menu__content {
+  width: 100%;
+  margin-left: auto;
+}
 
-      .nav__item {
-        a {
-          @include link($primary-color, $blue);
-        }
-      }
-    }
+.menu__wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-    .header__btn {
-      flex: 0 0 179px;
-      margin-left: auto;
-      a {
-        width: 179px;
-        height: 50px;
-      }
-    }
+.header__nav {
+  flex: 0 0 351px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 
-    .header__language {
-      flex: 0 0 30px;
-      height: 30px;
-      margin-left: 30px;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
+  .nav__item {
+    a {
+      @include link($primary-color, $blue);
     }
   }
 }
+
+.header__btn {
+  flex: 0 0 179px;
+
+  a {
+    width: 179px;
+    height: 50px;
+  }
+}
+
+.header__language {
+  flex: 0 0 30px;
+  height: 30px;
+  margin-left: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    box-shadow: none;
+
+    .container {
+      box-shadow: 0 7px 50px rgba(29, 72, 182, 0.13);
+    }
+  }
+
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__menu {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    span {
+      display: block;
+      border-bottom: 2px solid black;
+      width: 32px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        display: block;
+        border-bottom: 2px solid black;
+        width: 32px;
+
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        display: block;
+        border-top: 2px solid black;
+        width: 32px;
+      }
+    }
+  }
+
+  .menu__content {
+    position: fixed;
+    top: -1000%;
+    left: -1000%;
+    transition: transform .4s ease;
+    transform: translate(0%, -100%);
+
+    &:after {
+      content: '';
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+  }
+
+  .menu__content.active {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform .4s ease;
+    transform: translate(0%, 0%);
+    z-index: -1;
+    display: flex;
+    align-items: flex-start;
+
+    &:after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      background: rgba(0, 0, 0, .5);
+      z-index: 5;
+    }
+  }
+  .menu__wrapper {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    z-index: 10;
+    top: 0;
+  }
+
+  .header__nav {
+    order: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0;
+
+    .nav__item {
+      margin-bottom: 20px;
+      text-align: center;
+      width: 200px;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .header__btn {
+    order: 3;
+    flex: 0;
+    margin-bottom: 30px;
+  }
+  .header__language {
+    order: 2;
+    margin: 0 0 30px 0;
+    flex: 0;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
+

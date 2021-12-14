@@ -3,157 +3,333 @@
 
 .our-people {
   position: relative;
-
   margin: 150px 0;
-
 
   .section-head {
     justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.our-people__wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.our-people-bg {
+  position: relative;
+  height: 647px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.our-people__icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+  .small-icon, .medium-icon, .big-icon, .small-circle, .big-circle {
+    position: absolute;
+    border-radius: 50%;
   }
 
-  .our-people__wrapper {
-    position: relative;
-    height: 647px;
-    width: 100%;
-    margin: auto;
+  .big-icon {
+    width: 113px;
+    height: 113px;
+  }
 
-    .our-people-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
+  .medium-icon {
+    width: 85px;
+    height: 85px;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .small-icon {
+    width: 63px;
+    height: 63px;
+  }
+
+  .small-circle {
+    width: 20px;
+    height: 20px;
+    background: $blue;
+  }
+
+  .big-circle {
+    width: 30px;
+    height: 30px;
+    background: $blue;
+  }
+
+  img {
+    &:nth-child(1) {
+      top: 12.05%;
+      left: 5.96%;
     }
 
-    .our-people__icons {
-      .small-icon, .medium-icon, .big-icon, .small-circle, .big-circle {
-        position: absolute;
-        border-radius: 50%;
-      }
-
-      .big-icon {
-        width: 113px;
-        height: 113px;
-      }
-
-      .medium-icon {
-        width: 85px;
-        height: 85px;
-      }
-
-      .small-icon {
-        width: 63px;
-        height: 63px;
-      }
-
-      .small-circle {
-        width: 20px;
-        height: 20px;
-        background: $blue;
-      }
-
-      .big-circle {
-        width: 30px;
-        height: 30px;
-        background: $blue;
-      }
-
-      img {
-        &:nth-child(1) {
-          top: 12.05%;
-          left: 5.96%;
-        }
-
-        &:nth-child(2) {
-          top: 40.34%;
-          left: 15.89%;
-        }
-
-        &:nth-child(3) {
-          top: 12.05%;
-          left: 32.24%;
-        }
-
-        &:nth-child(4) {
-          top: 22.87%;
-          right: 47.05%;
-        }
-
-        &:nth-child(5) {
-          top: 14.21%;
-          right: 31.78%;
-        }
-
-        &:nth-child(6) {
-          top: 25.96%;
-          right: 8.99%;
-        }
-      }
-      div {
-        &:nth-child(7) {
-          top: 7.57%;
-          left: 17.05%;
-        }
-
-        &:nth-child(8) {
-          top: 31.68%;
-          left: 24.34%;
-        }
-
-        &:nth-child(9) {
-          top: 44.97%;
-          left: 43.56%;
-        }
-
-        &:nth-child(10) {
-          top: 7.41%;
-          right: 45.89%;
-        }
-
-        &:nth-child(11) {
-          top: 8.96%;
-          right: 24.72%;
-        }
-
-        &:nth-child(12) {
-          top: 40.34%;
-          right: 22.40%;
-        }
-      }
+    &:nth-child(2) {
+      top: 40.34%;
+      left: 15.89%;
     }
 
-    .our-people__body {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 20px;
+    &:nth-child(3) {
+      top: 12.05%;
+      left: 32.24%;
+    }
 
-      h3 {
-        text-align: center;
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
+    &:nth-child(4) {
+      top: 22.87%;
+      right: 47.05%;
+    }
 
-      p {
-        margin-bottom: 50px;
-        text-align: center;
-      }
+    &:nth-child(5) {
+      top: 14.21%;
+      right: 31.78%;
+    }
 
-      a {
-        width: 179px;
-        height: 50px;
-        margin: 0 auto;
-      }
+    &:nth-child(6) {
+      top: 25.96%;
+      right: 8.99%;
+    }
+  }
+
+  div {
+    &:nth-child(7) {
+      top: 7.57%;
+      left: 17.05%;
+    }
+
+    &:nth-child(8) {
+      top: 31.68%;
+      left: 24.34%;
+    }
+
+    &:nth-child(9) {
+      top: 44.97%;
+      left: 43.56%;
+    }
+
+    &:nth-child(10) {
+      top: 7.41%;
+      right: 45.89%;
+    }
+
+    &:nth-child(11) {
+      top: 8.96%;
+      right: 24.72%;
+    }
+
+    &:nth-child(12) {
+      top: 40.34%;
+      right: 22.40%;
     }
   }
 }
+
+.our-people__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+
+  > h3 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    strong {
+      color: $blue;
+    }
+  }
+
+  > p {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  > a {
+    width: 179px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .our-people-bg {
+    height: 550px;
+  }
+  .our-people__icons {
+    height: 550px;
+
+    .big-icon {
+      width: 83px;
+      height: 83px;
+    }
+
+    .medium-icon {
+      width: 55px;
+      height: 55px;
+    }
+
+    .small-icon {
+      width: 33px;
+      height: 33px;
+    }
+
+    .small-circle {
+      width: 16px;
+      height: 16px;
+    }
+
+    .big-circle {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .our-people__body {
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    > p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .our-people-bg {
+    height: 450px;
+  }
+  .our-people__icons {
+    height: 450px;
+
+    .big-icon {
+      width: 78px;
+      height: 78px;
+    }
+
+    .medium-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .small-icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .small-circle {
+      width: 14px;
+      height: 14px;
+    }
+
+    .big-circle {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .our-people__body {
+    > h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    > p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    > a {
+      width: 157px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-people-bg {
+    height: 310px;
+  }
+  .our-people__icons {
+    height: 310px;
+
+    .big-icon {
+      width: 68px;
+      height: 68px;
+    }
+
+    .medium-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .small-icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .small-circle {
+      width: 10px;
+      height: 10px;
+    }
+
+    .big-circle {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .our-people-bg {
+    height: 188px;
+  }
+  .our-people__icons {
+    height: 188px;
+
+    .big-icon {
+      width: 32.85px;
+      height: 32.85px;
+    }
+
+    .medium-icon {
+      width: 24.71px;
+      height: 24.71px;
+    }
+
+    .small-icon {
+      width: 18.31px;
+      height: 18.31px;
+    }
+
+    .small-circle {
+      width: 5.81px;
+      height: 5.81px;
+    }
+
+    .big-circle {
+      width: 8.72px;
+      height: 8.72px;
+    }
+  }
+}
+
+
+
+

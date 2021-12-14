@@ -3,24 +3,7 @@
 
 .courses {
   position: relative;
-  padding: 100px 0;
-
-}
-
-.courses-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .2;
-  }
+  margin: 100px 0;
 }
 
 .themes-slider {
@@ -53,8 +36,6 @@
   }
 }
 
-.courses__wrapper {
-}
 
 .courses-slider {
   padding-bottom: 80px;
