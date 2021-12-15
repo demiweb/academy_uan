@@ -54,13 +54,18 @@
 .hero__img {
   width: 553px;
   height: 311px;
+  position: relative;
 
   img {
     width: auto;
     height: 100%;
   }
-  video {
-    width: 400px;
-    height: 300px;
+  #video {
+    width: 423px;
+    height: 280px;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    border-radius: 5px;
   }
 }

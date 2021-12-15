@@ -18,6 +18,15 @@
       width: 100%;
       height: auto;
     }
+
+    #video {
+      width: 305px;
+      height: 205px;
+      position: absolute;
+      top: 4px;
+      left: 47px;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -26,6 +35,14 @@
   .hero__img {
     width: 100%;
     height: auto;
+
+    #video {
+      width: 76.4%;
+      height: 88.6%;
+      position: absolute;
+      top: 5px;
+      left: 11.7%;
+    }
   }
 }
 
@@ -67,6 +84,13 @@
 
   .hero__img {
     margin-bottom: 93px;
+    #video {
+      width: 76.4%;
+      height: 89.6%;
+      position: absolute;
+      top: 6px;
+      left: 11.7%;
+    }
   }
 
   .topics {
@@ -116,7 +140,18 @@
 }
 
 @media screen and (max-width: 575px) {
+  .hero__img {
+    margin-bottom: 93px;
+    #video {
+      width: 76.5%;
+      height: 89.6%;
+      position: absolute;
+      top: 1px;
+      left: 11.6%;
+    }
+  }
   .courses-slider__slide {
     padding: 20px 20px 43px;
   }
+
 }

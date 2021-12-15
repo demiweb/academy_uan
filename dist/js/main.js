@@ -187,3 +187,34 @@ if (!footerAccordion.length) {
 const lazyLoad = new LazyLoad({
     elements_selector: '.lazyload'
 })
+
+
+
+let player;
+
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('video', {
+        videoId: 'mHBTY_zs6Po',
+        playerVars: {
+            'autoplay':1,
+            'autohide': 1,
+            'showinfo': 0,
+            'rel': 0,
+            'loop': 1,
+            'playsinline': 0,
+            'fs': 0,
+            'allowsInlineMediaPlayback': false,
+            'controls': 0,
+            'modestbranding': 0
+        },
+        events: {
+            'onReady': function (e) {
+               setTimeout(() => {
+                   e.target.playVideo()
+               }, 200)
+            }
+        }
+    });
+}
+
+onYouTubePlayerAPIReady()
