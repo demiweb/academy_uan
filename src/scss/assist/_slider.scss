@@ -16,13 +16,33 @@
 
 .def-button-prev,
 .def-button-next {
+  top: auto;
+  bottom: 47px;
   width: 41px;
   height: 41px;
   background: $blue;
   border-radius: 50%;
   transition: all .4s ease;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: inline-block;
+    opacity: 0;
+    pointer-events: all;
+    transition: opacity 0.3s linear;
+    background: linear-gradient(to right, rgba(255, 255, 255, .24) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
   &:hover {
-    background: green;
+    &::after {
+      opacity: 1;
+      transition: opacity 0.3s linear;
+    }
   }
 }
 
@@ -33,7 +53,15 @@
       stroke: #fff;
     }
   }
+
   &:after {
-   content: '';
+    content: '';
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .def-button-prev,
+  .def-button-next {
+    display: none;
   }
 }

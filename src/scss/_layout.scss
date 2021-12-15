@@ -1,3 +1,5 @@
+@import "common/vars";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  width: 1440px;
   padding: 0 75px;
   margin: 0 auto;
   height: 100%;
@@ -22,7 +24,19 @@ body {
   overflow-y: hidden;
 }
 
-@media screen and (max-width: 1200px) {
+h2 {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1440px) {
   .container {
     width: 100%;
     padding: 0 20px;

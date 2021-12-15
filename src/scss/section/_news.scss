@@ -14,81 +14,80 @@
 }
 
 .news-slider__slide {
-  .card {
-    position: relative;
-    padding: 20px 30px;
-    background: rgba(51, 51, 51, 0.5);
-    border-radius: 10px;
-    transition: all .5s ease;
+  position: relative;
+  padding: 20px 30px;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  transition: all .5s ease;
 
-    &:hover {
-      cursor: pointer;
-      background: rgba(51, 51, 51, 0);
+  &:hover {
+    cursor: pointer;
+    background: rgba(51, 51, 51, 0);
+  }
+
+  .slide__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slide__content {
+    margin-top: 300px;
+
+    span {
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
-    .card-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-
-      img {
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    p {
+      color: #fff;
+      margin-bottom: 20px;
     }
 
-    .card__body {
-      margin-top: 300px;
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      max-width: 150px;
+      margin-left: auto;
+      transition: all .4s ease;
 
-      span {
-        display: inline-block;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 12px;
-      }
-
-      p {
-        color: #fff;
-        margin-bottom: 20px;
-      }
-
-      a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        max-width: 150px;
-        margin-left: auto;
-        transition: all .4s ease;
-
-        &:hover {
-          span {
-            color: $blue;
-          }
-
-          svg {
-            path {
-              fill: $blue;
-            }
-          }
-        }
-
+      &:hover {
         span {
-          font-size: 14px;
-          font-weight: 400;
-          margin-bottom: 0;
+          color: $blue;
         }
 
         svg {
-          margin-left: 20px;
+          path {
+            fill: $blue;
+          }
         }
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+
+      svg {
+        margin-left: 20px;
       }
     }
   }
+
 }
 

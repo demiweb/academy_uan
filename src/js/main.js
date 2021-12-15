@@ -73,7 +73,7 @@ new Swiper('.speakers-slider', {
     direction: 'horizontal',
     loop: false,
     // autoplay: true,
-    spaceBetween: 20,
+    spaceBetween: 30,
     breakpoints: {
         1400: {
             slidesPerView: 4,
@@ -138,8 +138,9 @@ new Swiper('.themes-slider', {
     watchOverflow: true,
     setWrapperSize: true,
     navigation: {
-        nextEl: '.def-button-next',
-        prevEl: '.def-button-prev',
+        nextEl: '.themes-slider-button-next',
+        prevEl: '.themes-slider-button-prev',
+        clickable: true
     },
 });
 
@@ -184,10 +185,34 @@ if (!footerAccordion.length) {
     })
 }
 
+const profileBtn = document.querySelectorAll('.profile')
+
+if (!profileBtn.length) {
+
+} else {
+    profileBtn.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation()
+            document.querySelector('.profile__menu').classList.toggle('open')
+        })
+    })
+    document.querySelectorAll('.profile__menu li').forEach(list => {
+        list.addEventListener('click', function (e) {
+            e.stopPropagation()
+        })
+    })
+    const body = document.querySelector('body')
+    body.addEventListener('click', function (e) {
+        if (!e.target.classList.contains('profile')) {
+            document.querySelector('.profile__menu').classList.remove('open')
+
+        }
+    })
+}
+
 const lazyLoad = new LazyLoad({
     elements_selector: '.lazyload'
 })
-
 
 
 let player;
@@ -196,7 +221,7 @@ function onYouTubePlayerAPIReady() {
     player = new YT.Player('video', {
         videoId: 'mHBTY_zs6Po',
         playerVars: {
-            'autoplay':1,
+            'autoplay': 1,
             'autohide': 1,
             'showinfo': 0,
             'rel': 0,
@@ -209,9 +234,9 @@ function onYouTubePlayerAPIReady() {
         },
         events: {
             'onReady': function (e) {
-               setTimeout(() => {
-                   e.target.playVideo()
-               }, 200)
+                setTimeout(() => {
+                    e.target.playVideo()
+                }, 200)
             }
         }
     });

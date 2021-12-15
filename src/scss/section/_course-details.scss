@@ -2,152 +2,332 @@
 @import "../common/mixins";
 
 .course-details {
-  .course-details__wrapper {
-    margin: 50px 0;
-    .course-details__head {
-      display: flex;
-      margin-bottom: 100px;
-      .head__img {
-        width: 299px;
-        height: 189px;
-        img {
-          width: 100%;
-          height: 100%;
-        }
+  padding: 50px 0;
+  z-index: 5;
+}
+
+.course-details__wrapper {
+  margin: 50px 0;
+
+
+  .course-details__about {
+    div {
+      h3 {
+
       }
 
-      .head__text {
-        width: auto;
-        margin-left: 30px;
-        span {
+      p {
 
+      }
+    }
+  }
+
+  .course-details__schedule {
+    div {
+      h3 {
+
+      }
+
+      ol {
+        li {
+          p {
+
+          }
+        }
+      }
+    }
+  }
+
+  .course-details__speakers {
+    div {
+      h3 {
+
+      }
+
+      .speaker {
+        .speaker__img {
+          img {
+
+          }
         }
 
-        div {
-
-        }
-
-        p {
-
-        }
-
-        .head__info {
-          div {
+        .speaker__description {
+          span {
 
           }
 
           p {
-            svg {
-
-            }
-          }
-
-          span {
 
           }
-        }
-      }
 
-      .head__btn {
-        margin: auto 101px 0;
-        a {
-          width: 179px;
-          height: 50px;
-        }
-      }
-    }
-
-    .course-details__about {
-      div {
-        h3 {
-
-        }
-
-        p {
-
-        }
-      }
-    }
-
-    .course-details__schedule {
-      div {
-        h3 {
-
-        }
-
-        ol {
-          li {
-            p {
-
-            }
-          }
-        }
-      }
-    }
-
-    .course-details__speakers {
-      div {
-        h3 {
-
-        }
-
-        .speaker {
-          .speaker__img {
-            img {
-
-            }
-          }
-
-          .speaker__description {
-            span {
-
-            }
-
-            p {
-
-            }
-
+          div {
             div {
-              div {
-                img {
+              img {
 
-                }
+              }
 
-                span {
+              span {
 
-                }
               }
             }
           }
         }
       }
     }
+  }
 
-    .course-details__faq {
-      div {
-        h3 {
+  .course-details__faq {
+    div {
+      h3 {
 
+      }
+
+      .accordion {
+        .accordion-btn {
+          span {
+
+          }
+
+          svg {
+
+          }
         }
-        .accordion {
-          .accordion-btn {
-            span {
 
-            }
-            svg {
+        .accordion-content {
 
-            }
-          }
-          .accordion-content {
-
-          }
         }
       }
     }
+  }
 
-    .course-details__btn {
-      a {
+  .course-details__btn {
+    a {
 
+    }
+  }
+}
+
+.course-details__head {
+  display: flex;
+  position: relative;
+  padding: 52px 0 53px;
+}
+
+.head__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.course-details__content {
+  position: relative;
+  width: 350px;
+
+  > span {
+    display: inline-block;
+    font-size: 14px;
+    color: $blue;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  > h2 {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 12px;
+  }
+
+  > p {
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .content__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    > div {
+      margin-bottom: 0;
+
+      &:after {
+        content: attr(data-star);
+        color: $orange;
+        font-size: 18px;
+      }
+    }
+
+    > p {
+      display: flex;
+      margin-left: auto;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 400;
+
+      svg {
+        margin-right: 6px;
+      }
+    }
+
+    > span {
+      color: $blue;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+
+  }
+
+  .content__btn {
+
+    * {
+      width: 100%;
+      min-width: 110px;
+      height: 50px;
+    }
+  }
+}
+
+.course-details__about {
+  padding: 100px 0;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    color: $secondary-color;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.course-details__speakers {
+  padding: 80px 0;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  .container > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .speaker {
+    display: flex;
+    align-items: center;
+    width: calc(33.3333% - (130px / 3));
+
+    .speaker__img {
+      flex: 0 0 129px;
+      height: 129px;
+      margin-right: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .speaker__description {
+      flex: 0 0 auto;
+
+      > span {
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      > p {
+        color: $primary-color;
+        margin-bottom: 12px;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+
+          span {
+            color: $blue;
+            font-size: 14px;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      > a {
+        width: 237px;
+        height: 40px;
       }
     }
   }
 }
+
+.course-details__schedule {
+  margin: 100px 0;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  .module {
+    width: 100%;
+
+    span {
+      display: block;
+      color: $blue;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 700;
+      border-bottom: 1px solid #B9C7D5;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      max-height: 0;
+      overflow: hidden;
+
+      li {
+        margin: 15px 0;
+        color: $primary-color;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+

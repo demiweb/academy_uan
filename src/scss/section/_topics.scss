@@ -16,59 +16,57 @@
 }
 
 .topics-slider__slide {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  transition: all .5s ease;
+
+  &:hover {
+    box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+  }
+
   > a {
     text-decoration: none;
     display: block;
     flex: 0 0 calc(25% - (90px / 4));
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
     margin-bottom: 10px;
-    transition: all .5s ease;
 
-    &:hover {
-      box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+    .slide__img {
+      width: 100%;
+      height: 191px;
+
+      img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
-    .card {
-      background: #fff;
-      border-radius: 10px;
+    .slide__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
 
-      .card__img {
-        width: 100%;
-        height: 191px;
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-color;
 
-        img {
-          border-radius: 10px 10px 0 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        &:after {
+          content: '';
+          border-right: 1px solid $secondary-color;
+          margin-left: 10px;
+          width: 21px;
         }
       }
 
-      .card__body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 15px;
-
-        p {
-          font-size: 20px;
-          font-weight: 700;
-          color: $primary-color;
-
-          &:after {
-            content: '';
-            border-right: 1px solid $secondary-color;
-            margin-left: 10px;
-            width: 21px;
-          }
-        }
-
-        span {
-          font-size: 14px;
-          color: $secondary-color;
-        }
+      span {
+        font-size: 14px;
+        color: $secondary-color;
       }
     }
   }
@@ -80,51 +78,81 @@
   justify-content: space-between;
 
   a {
-    flex: 0 0 calc(25% - (90px / 4));
     text-decoration: none;
     display: block;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+    transition: all .5s ease;
+    margin-bottom: 30px;
 
-    .topics__card {
-      border-radius: 10px;
-      background: #fff;
+    &:hover {
+      box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+    }
 
-      .card__img {
-        width: 300px;
-        height: 191px;
+    .card__img {
+      width: 100%;
+      height: 191px;
 
-        img {
-          border-radius: 10px 10px 0 0;
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .card__body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 15px;
-        margin-bottom: 50px;
-
-        p {
-          font-size: 20px;
-          font-weight: 700;
-          color: $primary-color;
-
-          &:after {
-            content: '';
-            border-right: 1px solid $secondary-color;
-            margin-left: 10px;
-            width: 21px;
-          }
-        }
-
-        span {
-          font-size: 14px;
-          color: $secondary-color;
-        }
+      img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
+
+    .card__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
+
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-color;
+
+        &:after {
+          content: '';
+          border-right: 1px solid $secondary-color;
+          margin-left: 10px;
+          width: 21px;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.topics__body.lg {
+  a {
+    flex: 0 0 calc(25% - (90px / 4));
+  }
+}
+
+.topics__body.xl {
+  display: none;
+  a {
+    flex: 0 0 calc(33.3333% - (60px / 3));
+  }
+}
+
+.topics__body.md {
+  display: none;
+  a {
+    flex: 0 0 calc(50% - (30px / 2));
+  }
+}
+
+.topics__body.sm {
+  display: none;
+  a {
+    flex: 0 0 100%;
   }
 }
 

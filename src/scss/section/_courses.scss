@@ -8,27 +8,35 @@
 
 .themes-slider {
   position: relative;
-  height: 43px;
-  margin: 50px 0;
+  height: 90px;
+  margin: 50px 0 0;
   padding: 0 61px;
 }
 
 .themes-slider__wrapper {
   width: 100%;
+  margin-top: auto;
 }
 
 .themes-slider__slide {
   display: flex;
   align-items: center;
   width: auto !important;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 100px;
+  height: 43px;
+  box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
 
   > a {
-    padding: 8px 16px;
-    color: #B9C7D4;
-    background: #fff;
-    border-radius: 100px;
     text-decoration: none;
+    color: #B9C7D4;
     font-weight: 700;
+    font-size: 17px;
+
+    &:hover {
+
+    }
 
     &.current {
       color: $blue;
@@ -165,18 +173,22 @@
   flex-wrap: wrap;
   margin-bottom: 10px;
 
-  a {
+  .card {
     text-decoration: none;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
-    padding: 30px 30px 43px;
+    padding: 20px 20px 43px;
     display: block;
-    width: calc(33% - (60px / 3));
     margin-bottom: 40px;
+    transition: all .5s ease;
+
+    &:hover {
+      box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+    }
 
     .card__img {
-      width: 350px;
+      width: 100%;
       height: 117px;
       margin-bottom: 30px;
 
@@ -266,14 +278,39 @@
       display: flex;
       justify-content: space-between;
 
-      button {
+      * {
+        width: 166px;
+        min-width: 110px;
         height: 40px;
 
         &:first-child {
           margin-right: 20px;
         }
       }
+
     }
+  }
+}
+
+.courses__body.xl {
+  .card {
+    width: calc(33% - (60px / 3));
+  }
+}
+
+.courses__body.md {
+  display: none;
+
+  .card {
+    width: calc(50% - (30px / 2));
+  }
+}
+
+.courses__body.sm {
+  display: none;
+
+  .card {
+    width: 100%;
   }
 }
 
