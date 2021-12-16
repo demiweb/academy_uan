@@ -47,10 +47,11 @@ new Swiper(".topics-slider", {
 
 new Swiper('.courses-slider', {
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     autoplay: true,
     slidesPerView: 3,
     spaceBetween: 30,
+    watchOverflow: true,
     pagination: {
         el: '.courses-slider__pagination',
         clickable: true,

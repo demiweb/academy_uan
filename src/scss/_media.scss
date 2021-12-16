@@ -37,6 +37,14 @@
     display: flex;
   }
 
+  .speakers__body.lg {
+    display: none;
+  }
+
+  .speakers__body.xl {
+    display: flex;
+  }
+
 }
 
 
@@ -53,15 +61,18 @@
       left: 11.7%;
     }
   }
+
   .speaker {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .speaker__img {
     margin-right: 0;
   }
+
   .speaker__description {
     width: 100%;
     display: flex;
@@ -74,6 +85,12 @@
           margin-right: 15px;
         }
       }
+    }
+  }
+
+  .news-details__description {
+    > img {
+      align-self: center;
     }
   }
 }
@@ -135,6 +152,14 @@
     display: flex;
   }
 
+  .speakers__body.xl {
+    display: none;
+  }
+
+  .speakers__body.md {
+    display: flex;
+  }
+
   .courses__body.xl {
     display: none;
   }
@@ -185,7 +210,7 @@
   }
 
   .courses {
-    margin: 70px 0;
+    padding: 70px 0;
   }
 
   .speakers {
@@ -287,6 +312,25 @@
     width: 100%;
     height: 100%;
   }
+
+  .news-details-bg {
+    display: none;
+  }
+
+  .news-details__description {
+    display: flex;
+    flex-direction: column;
+
+    > img {
+      margin-bottom: 50px;
+    }
+    .text {
+      margin-left: 0;
+    }
+  }
+  .news-details__description {
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -323,6 +367,14 @@
   }
 
   .topics__body.sm {
+    display: flex;
+  }
+
+  .speakers__body.md {
+    display: none;
+  }
+
+  .speakers__body.sm {
     display: flex;
   }
 
@@ -372,11 +424,19 @@
       left: 11.6%;
     }
   }
+
   .courses-slider__slide {
     padding: 20px 20px 43px;
   }
+
   .course-details__content {
     width: 100%;
   }
 
+  .news-details__description {
+    > img {
+      width: 100%;
+      max-height: 322px;
+    }
+  }
 }
