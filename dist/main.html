@@ -638,8 +638,8 @@
             <div class="swiper news-slider">
                 <div class="swiper-wrapper news-slider__wrapper">
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-1.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-1.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -662,8 +662,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-2.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-2.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -686,8 +686,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-3.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-3.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -710,8 +710,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-1.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-1.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -734,8 +734,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-2.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-2.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -758,8 +758,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide news-slider__slide">
-                        <div class="slide__bg">
-                            <img src="img/news-img-3.png" alt="slide__bg" class="lazyload">
+                        <div class="slide-bg">
+                            <img src="img/news-img-3.png" alt="slide-bg" class="lazyload">
                         </div>
                         <div class="slide__content">
                                     <span>
@@ -827,15 +827,18 @@
 </main>
 
 <footer class="footer">
+
+
     <div class="footer-bg"
-         style="background: url('../img/footer-bg-left.png') left bottom no-repeat, url('../img/footer-bg-right.png') right top no-repeat">
+         style="background: url('../img/footer-bg-left.png') no-repeat left bottom / cover,
+          url('../img/footer-bg-right.png') no-repeat right top /cover">
     </div>
     <div class="container">
         <div class="footer__top">
             <div class="footer__logo">
                 <img src="img/svg/footer-logo.svg" alt="logo">
             </div>
-            <div class="footer__nav">
+            <div class="footer__nav accordion">
                 <span class="list__title">
                     Topics
                      <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -856,7 +859,7 @@
                     <li><a href="#">Skull base</a></li>
                 </ul>
             </div>
-            <div class="footer__nav">
+            <div class="footer__nav accordion">
                 <span class="list__title">
                     Sitemap
                      <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -872,7 +875,7 @@
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
-            <div class="footer__nav">
+            <div class="footer__nav accordion">
                 <span class="list__title">
                     Support
                     <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">

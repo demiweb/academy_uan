@@ -1,0 +1,157 @@
+@import "../common/vars";
+
+.contact-us {
+  padding: 50px 0 150px;
+  min-height: 100vh;
+}
+
+.contact-us-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact-us__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+.contacts-us__body {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  border-radius: 10px;
+}
+
+.contacts-us__info {
+  width: 40%;
+  position: relative;
+  padding: 50px 60px;
+
+
+  .info-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+
+  h3 {
+    color: $blue;
+    margin-bottom: 50px;
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-color;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: auto;
+    }
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+
+  .social-networks {
+    margin-top: 95px;
+    display: flex;
+
+
+    > a {
+      text-decoration: none;
+      width: 32px;
+      height: 32px;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+
+      > svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.contact-us__form {
+  width: 60%;
+  padding: 50px 60px;
+  background: #fff;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    label {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 600;
+      color: $primary-color;
+
+      &:not(:last-of-type) {
+        width: calc(50% - (30px / 2));
+      }
+
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+
+    input, textarea {
+      padding: 13px 25px;
+      border: 1px solid #B9C7D5;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 5px 0 15px;
+
+      &::placeholder {
+        color: $secondary-color;
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 35px;
+    }
+
+    button {
+      width: 255px;
+      height: 50px;
+      margin-left: auto;
+    }
+  }
+}
+

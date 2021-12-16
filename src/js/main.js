@@ -48,7 +48,7 @@ new Swiper(".topics-slider", {
 new Swiper('.courses-slider', {
     direction: 'horizontal',
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -72,7 +72,7 @@ new Swiper('.courses-slider', {
 new Swiper('.speakers-slider', {
     direction: 'horizontal',
     loop: false,
-    // autoplay: true,
+    autoplay: true,
     spaceBetween: 30,
     breakpoints: {
         1400: {
@@ -109,8 +109,8 @@ new Swiper('.speakers-slider', {
 
 new Swiper('.news-slider', {
     direction: 'horizontal',
-    loop: true,
-    // autoplay: true,
+    loop: false,
+    autoplay: true,
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -121,12 +121,15 @@ new Swiper('.news-slider', {
     breakpoints: {
         1200: {
             slidesPerView: 3,
+            watchOverflow: true,
         },
         767: {
             slidesPerView: 2,
+            watchOverflow: true,
         },
         0: {
             slidesPerView: 1,
+            watchOverflow: true,
         },
     },
 });
@@ -135,15 +138,44 @@ new Swiper('.themes-slider', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 20,
-    watchOverflow: true,
     setWrapperSize: true,
     navigation: {
         nextEl: '.themes-slider-button-next',
         prevEl: '.themes-slider-button-prev',
         clickable: true
     },
+
+    breakpoints: {
+        0: {
+            watchOverflow: true,
+        }
+    }
 });
 
+new Swiper('.reviews-slider', {
+    direction: 'horizontal',
+
+    spaceBetween: 30,
+    watchOverflow: true,
+    pagination: {
+        el: '.reviews-slider__pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+        991: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    }
+});
+
+// Бургер меню в header
 const menu = document.querySelector('.header__menu')
 
 menu.addEventListener('click', function () {
@@ -164,14 +196,15 @@ menu.addEventListener('click', function () {
     }
 })
 
-const footerAccordion = document.querySelectorAll('.footer__nav .list__title')
+// Функция работы accordion
+const accordion = document.querySelectorAll('.accordion')
 
-if (!footerAccordion.length) {
+if (!accordion.length) {
 
 } else {
-    footerAccordion.forEach(accordion => {
-        accordion.addEventListener('click', function () {
-            const accordionContent = this.nextElementSibling
+    accordion.forEach((accordion, idx) => {
+        accordion.addEventListener('click', function (e) {
+            const accordionContent = this.querySelector('ul')
 
             accordion.classList.toggle('open')
 
@@ -185,6 +218,8 @@ if (!footerAccordion.length) {
     })
 }
 
+
+// Выпадающий список в header
 const profileBtn = document.querySelectorAll('.profile')
 
 if (!profileBtn.length) {
@@ -210,11 +245,15 @@ if (!profileBtn.length) {
     })
 }
 
+//
+
+// Lazyload картинок
 const lazyLoad = new LazyLoad({
     elements_selector: '.lazyload'
 })
 
 
+// Youtube player
 let player;
 
 function onYouTubePlayerAPIReady() {
