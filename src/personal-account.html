@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @@include('./parts/links.html')
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+@@include('./parts/header-logout.html')
+
+<main>
+    <section class="personal-account bg-grey">
+        <div class="container">
+            <div class="section-head-pages">
+                <h2>Personal account</h2>
+            </div>
+            <div class="personal-account__wrapper">
+                <form>
+                    <header>
+                        <img src="img/user-icon.png" alt="user-icon">
+                        <button class="btn-blue-def">Upload</button>
+                        <button class="btn-gray-def">Remove</button>
+                    </header>
+                    <div>
+                        <label for="full-name">
+                            Full Name
+                            <input type="text" id="full-name" placeholder="Cristina Bednar">
+                        </label>
+                        <label for="user-email-account">
+                            E-mail
+                            <input type="email" id="user-email-account" placeholder="CrisBednar@gmail.com">
+                        </label>
+                        <label for="user-phone">
+                            Phone
+                            <input type="tel" id="user-phone">
+                        </label>
+                    </div>
+                    <div>
+                        <span>
+                            Change password
+                        </span>
+                        <label for="old-password">
+                            Old password
+                            <input type="password" id="old-password">
+                        </label>
+                        <label for="new-password">
+                            New password
+                            <input type="password" id="new-password">
+                        </label>
+                        <label for="confirm-password">
+                            Confirm password
+                            <input type="password" id="confirm-password">
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-blue">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./parts/footer.html')
+
+@@include('./parts/scripts.html')
+
+</body>
+</html>

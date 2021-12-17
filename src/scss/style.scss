@@ -1,7 +1,5 @@
 @import "layout";
 
-// Common
-@import "common/additionally";
 
 // Assist
 @import "assist/buttons";
@@ -26,6 +24,10 @@
 @import "section/contact-us";
 @import "section/news-details";
 @import "section/speakers-details";
+@import "section/about-us";
+@import "section/how-it-works";
+@import "section/our-speakers";
+@import "section/personal-account";
 
 
 @import "media";

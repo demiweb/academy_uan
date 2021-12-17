@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @@include('./parts/links.html')
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+@@include('./parts/header-logout.html')
+
+<main>
+    <section class="about-us bg-grey">
+        <div class="page-section-bg">
+            <img src="img/page-section-bg.png" alt="page-section-bg" class="lazyload">
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Main Page</span></a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses/real">
+                            <span itemprop="name">About us</span></a>
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                </ol>
+            </div>
+            <div class="section-head">
+                <h2>About us</h2>
+            </div>
+            <div class="about-us__wrapper">
+                <div class="text">
+                    <h2>About us</h2>
+                    <span>
+                        All intubation techniques will be practiced on professional manikins that simulate complex
+                        airways.
+                    </span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis cursus consectetur blandit et
+                        et, sed tellus bibendum. Nulla vitae mattis mi tempus, arcu. Amet ornare mauris amet, integer eu
+                        habitant in nibh. Cursus amet purus nec, tortor mauris justo.
+                    </p>
+                    <p>
+                        In massa diam lorem eget aenean in consequat, elementum. Posuere eu enim tellus pretium
+                        placerat. Velit, dolor facilisi justo id. Ut hendrerit bibendum gravida vel.
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="anim-num" data-num="1800">
+                                1800+
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="anim-num" data-num="130">
+                                130+
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="anim-num" data-num="1500">
+                                1500+
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <img src="img/about-us-img.png" alt="about-us-img" class="lazyload">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-head">
+                <h2>How it works</h2>
+            </div>
+            <div class="how-it-works__list">
+                <ul>
+                    <li>
+                        <div>
+                            <div class="icon" style="background: #F2F8FF;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.333 28V25.3333C21.333 23.9188 20.7711 22.5623 19.7709 21.5621C18.7707 20.5619 17.4142 20 15.9997 20H6.66634C5.25185 20 3.8953 20.5619 2.89511 21.5621C1.89491 22.5623 1.33301 23.9188 1.33301 25.3333V28"
+                                          stroke="#136FF0" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M11.3333 14.6667C14.2789 14.6667 16.6667 12.2789 16.6667 9.33333C16.6667 6.38781 14.2789 4 11.3333 4C8.38781 4 6 6.38781 6 9.33333C6 12.2789 8.38781 14.6667 11.3333 14.6667Z"
+                                          stroke="#136FF0" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M20 14L29.4281 14" stroke="#136FF0" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M24.714 9.28596L24.714 18.714" stroke="#136FF0" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="title">
+                        Sign Up
+                    </span>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon" style="background: #F5F2FF;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.33366 29.3333C8.50568 28.7124 7.83366 27.9071 7.37081 26.9814C6.90796 26.0557 6.66699 25.035 6.66699 24"
+                                          stroke="#B099FD" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M9.33301 22.5734C10.613 23.1467 11.9463 23.56 13.3197 23.7867"
+                                          stroke="#B099FD" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M4.45366 18.6667C3.30778 17.1232 2.68211 15.2556 2.66699 13.3333C2.66699 7.43999 8.64033 2.66666 16.0003 2.66666C23.3603 2.66666 29.3337 7.43999 29.3337 13.3333C29.3137 14.2385 29.1655 15.1363 28.8937 16"
+                                          stroke="#B099FD" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M6.66667 24C7.37391 24 8.05219 23.719 8.55228 23.2189C9.05238 22.7188 9.33333 22.0406 9.33333 21.3333C9.33333 20.6261 9.05238 19.9478 8.55228 19.4477C8.05219 18.9476 7.37391 18.6667 6.66667 18.6667C5.95942 18.6667 5.28115 18.9476 4.78105 19.4477C4.28095 19.9478 4 20.6261 4 21.3333C4 22.0406 4.28095 22.7188 4.78105 23.2189C5.28115 23.719 5.95942 24 6.66667 24V24Z"
+                                          stroke="#B099FD" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M19.107 29.3333H18.987C18.8965 29.3034 18.8172 29.2465 18.76 29.1702C18.7028 29.0939 18.6704 29.002 18.667 28.9067V15.5733C18.6669 15.4554 18.7129 15.342 18.795 15.2574C18.8772 15.1728 18.9891 15.1235 19.107 15.12C19.2137 15.12 19.307 15.16 19.387 15.2267L29.1737 23.2267C29.2465 23.2835 29.2995 23.3619 29.3253 23.4506C29.3511 23.5393 29.3483 23.6339 29.3173 23.721C29.2864 23.808 29.2288 23.8831 29.1527 23.9356C29.0767 23.988 28.986 24.0153 28.8937 24.0133H22.907L19.4803 29.1467C19.4369 29.2046 19.3805 29.2517 19.3157 29.2841C19.2509 29.3165 19.1794 29.3333 19.107 29.3333V29.3333V29.3333Z"
+                                          stroke="#B099FD" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="title">
+                        Chouse your course
+                    </span>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon" style="background: #E8FEFA;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.667 8H5.33366C3.8609 8 2.66699 9.19391 2.66699 10.6667V21.3333C2.66699 22.8061 3.8609 24 5.33366 24H26.667C28.1398 24 29.3337 22.8061 29.3337 21.3333V10.6667C29.3337 9.19391 28.1398 8 26.667 8Z"
+                                          stroke="#65CEBB" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M15.9997 18.6667C17.4724 18.6667 18.6663 17.4728 18.6663 16C18.6663 14.5273 17.4724 13.3333 15.9997 13.3333C14.5269 13.3333 13.333 14.5273 13.333 16C13.333 17.4728 14.5269 18.6667 15.9997 18.6667Z"
+                                          stroke="#65CEBB" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M24 16H24.0133M8 16H8.01333H8Z" stroke="#65CEBB" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="title">
+                        Pay
+                    </span>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon" style="background: #FFF2E3;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.0003 29.3333C23.3641 29.3333 29.3337 23.3638 29.3337 16C29.3337 8.63619 23.3641 2.66666 16.0003 2.66666C8.63653 2.66666 2.66699 8.63619 2.66699 16C2.66699 23.3638 8.63653 29.3333 16.0003 29.3333Z"
+                                          stroke="#E2A865" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.667 18.6667C10.667 18.6667 12.667 21.3333 16.0003 21.3333C19.3337 21.3333 21.3337 18.6667 21.3337 18.6667"
+                                          stroke="#E2A865" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 12H12.0133" stroke="#E2A865" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M20 12H20.0133" stroke="#E2A865" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="title">
+                        Learn and enjoy
+                    </span>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-speakers">
+        <div class="page-section-bg">
+            <img src="img/page-section-bg.png" alt="page-section-bg" class="lazyload">
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="img/speaker-1.png" alt="about-us-img" class="lazyload lg-img">
+                <img src="img/speaker-2.png" alt="about-us-img" class="lazyload xl-img">
+                <img src="img/speaker-3.png" alt="about-us-img" class="lazyload md-img">
+                <img src="img/speaker-1.png" alt="about-us-img" class="lazyload sm-img">
+                <img src="img/speaker-4.png" alt="about-us-img" class="lazyload sm-img">
+                <img src="img/speaker-3.png" alt="about-us-img" class="lazyload sm-img">
+            </div>
+            <div class="our-speakers__wrapper">
+                <div class="text">
+                    <h2>Our speakers</h2>
+                    <span>
+                        All intubation techniques will be practiced on professional manikins that simulate complex
+                        airways.
+                    </span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis cursus consectetur blandit et
+                        et, sed tellus bibendum. Nulla vitae mattis mi tempus, arcu. Amet ornare mauris amet, integer eu
+                        habitant in nibh. Cursus amet purus nec, tortor mauris justo.
+                    </p>
+                    <p>
+                        In massa diam lorem eget aenean in consequat, elementum. Posuere eu enim tellus pretium
+                        placerat. Velit, dolor facilisi justo id. Ut hendrerit bibendum gravida vel. Auctor tincidunt
+                        massa, viverra amet elit a aliquam. Nunc, pellentesque turpis feugiat nisi, mauris volutpat.
+                        Elementum porttitor sit vitae ut augue vitae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-people">
+        <div class="section-head">
+            <h2>
+                Our people from all over the world
+            </h2>
+        </div>
+        <div class="container">
+            <div class="our-people__wrapper">
+                <div class="our-people-bg">
+                    <img class='lazyload' src="img/svg/our-people-bg.svg" alt="our-people-bg">
+                </div>
+                <div class="our-people__icons">
+                    <img src="img/our-people-icon-1.png" alt="icon" class="big-icon lazyload">
+                    <img src="img/our-people-icon-2.png" alt="icon" class="small-icon lazyload">
+                    <img src="img/our-people-icon-3.png" alt="icon" class="small-icon lazyload">
+                    <img src="img/our-people-icon-4.png" alt="icon" class="medium-icon lazyload">
+                    <img src="img/our-people-icon-5.png" alt="icon" class="medium-icon lazyload">
+                    <img src="img/our-people-icon-6.png" alt="icon" class="big-icon lazyload">
+                    <div class="small-circle"></div>
+                    <div class="big-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="big-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="big-circle"></div>
+                </div>
+                <div class="our-people__body">
+                    <h3>
+                        More than <strong>a million</strong> people have joined us
+                    </h3>
+                    <p>
+                        Choose your course and become one of our top students
+                    </p>
+                    <a href="#" class="btn-blue">Join</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./parts/footer.html')
+
+@@include('./parts/scripts.html')
+</body>
+</html>

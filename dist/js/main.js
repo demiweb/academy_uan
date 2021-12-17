@@ -17,7 +17,6 @@ new Swiper(".topics-slider", {
             slidesPerColumn: 3,
             slidesPerColumnFill: 'row',
             spaceBetween: 30,
-
         },
         991: {
             slidesPerView: 3,
@@ -37,21 +36,20 @@ new Swiper(".topics-slider", {
             slidesPerView: 1,
             slidesPerColumn: 1,
             slidesPerColumnFill: 'row',
-            spaceBetween: 30,
-
+            spaceBetween: 0,
         }
 
     }
 })
-
 
 new Swiper('.courses-slider', {
     direction: 'horizontal',
     loop: false,
     autoplay: true,
     slidesPerView: 3,
-    spaceBetween: 30,
     watchOverflow: true,
+    observer: true,
+    observeParents: true,
     pagination: {
         el: '.courses-slider__pagination',
         clickable: true,
@@ -60,12 +58,15 @@ new Swiper('.courses-slider', {
     breakpoints: {
         1200: {
             slidesPerView: 3,
+            spaceBetween: 30,
         },
         767: {
             slidesPerView: 2,
+            spaceBetween: 30,
         },
         0: {
-            slidesPerView: 1
+            slidesPerView: 1,
+            spaceBetween: 0,
         }
     },
 });
@@ -103,6 +104,7 @@ new Swiper('.speakers-slider', {
                 clickable: true,
             },
             watchOverflow: false,
+            spaceBetween: 0,
         }
     },
 
@@ -131,6 +133,7 @@ new Swiper('.news-slider', {
         0: {
             slidesPerView: 1,
             watchOverflow: true,
+            spaceBetween: 0,
         },
     },
 });
@@ -172,6 +175,7 @@ new Swiper('.reviews-slider', {
         },
         0: {
             slidesPerView: 1,
+            spaceBetween: 0,
         }
     }
 });
@@ -219,6 +223,33 @@ if (!accordion.length) {
     })
 }
 
+// Функция работы tabs
+const tabs = document.querySelectorAll('.tabs__btn > a')
+
+if (!tabs.length) {
+
+} else {
+    tabs.forEach(tab => {
+        const id = tab.getAttribute('href').replace('#', '')
+        const tabContent = document.querySelectorAll('.tabs__content .swiper')
+        let quantity = tab.querySelector('.quantity')
+
+        quantity.innerHTML = document.getElementById(id).querySelectorAll('.swiper-slide').length
+
+        tab.addEventListener('click', function (event) {
+            event.preventDefault()
+
+
+            tabContent.forEach(content => content.classList.remove('open'))
+            document.getElementById(id).classList.add('open')
+
+            if (!tab.classList.contains('active')) {
+                tabs.forEach(elem => elem.classList.remove('active'))
+                tab.classList.add('active')
+            }
+        })
+    })
+}
 
 // Выпадающий список в header
 const profileBtn = document.querySelectorAll('.profile')
@@ -241,12 +272,43 @@ if (!profileBtn.length) {
     body.addEventListener('click', function (e) {
         if (!e.target.classList.contains('profile')) {
             document.querySelector('.profile__menu').classList.remove('open')
-
         }
     })
 }
 
-//
+const animNum = document.querySelectorAll('.anim-num')
+
+if (!animNum.length) {
+
+} else {
+    const time = 3000;
+    function outNum(num, elem) {
+        let step = 0;
+
+        if (num < 200) {
+            step = 1;
+        } else {
+            step = 10;
+        }
+        let n = 0
+        let t = Math.round(time / (num / step));
+        let interval = setInterval(() => {
+            n = n + step;
+            if (n === num) {
+                clearInterval(interval)
+            }
+            elem.innerHTML = n + '+'
+        }, t)
+
+    }
+
+    animNum.forEach(anim => {
+        const number = Number(anim.dataset.num)
+
+        // console.log(anim.dataset.num)
+        outNum(number, anim)
+    })
+}
 
 // Lazyload картинок
 const lazyLoad = new LazyLoad({

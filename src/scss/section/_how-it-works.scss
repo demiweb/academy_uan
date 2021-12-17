@@ -1,0 +1,66 @@
+@import "../common/vars";
+
+.how-it-works {
+  margin: 80px;
+}
+
+.how-it-works__list {
+  ul {
+    list-style: none;
+    columns: 4;
+    column-gap: 29px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > div {
+        width: 80px;
+        height: 80px;
+
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 23px;
+        svg {
+          animation: rotate-20 2000ms infinite;
+        }
+      }
+
+      .title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $secondary-color;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@keyframes rotate-20 {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg)
+  }
+  100% {
+    transform: rotate(-20deg)
+  }
+}

@@ -126,8 +126,8 @@
 
 <main>
     <section class="speakers-details bg-grey no-margin">
-        <div class="speakers-details-bg">
-            <img src="img/bg-page.png" alt="speakers-details-bg" class="lazyload">
+        <div class="page-section-bg">
+            <img src="img/page-section-bg.png" alt="page-section-bg" class="lazyload">
         </div>
         <div class="container">
             <div class="breadcrumb">
@@ -204,136 +204,516 @@
                 <div class="section-head-pages">
                     <h2>Courses with his participation</h2>
                 </div>
-                <div class="swiper courses-slider">
-                    <div class="swiper-wrapper courses-slider__wrapper">
-                        <div class="swiper-slide courses-slider__slide">
-                            <div class="slide__img">
-                                <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
-                            </div>
-                            <span>
+                <div class="courses__tabs tabs__btn">
+                    <a href="#theme-1" class="active">
+                        Vascular
+                        <span class="quantity"></span>
+                    </a>
+                    <a href="#theme-2">
+                        Radiosurgery
+                        <span class="quantity"></span>
+                    </a>
+                    <a href="#theme-3">
+                        Pediatric
+                        <span class="quantity"></span>
+                    </a>
+                    <a href="#theme-4">
+                        Skull base
+                        <span class="quantity"></span>
+                    </a>
+                    <a href="#theme-5">
+                        Spine
+                        <span class="quantity"></span>
+                    </a>
+                </div>
+                <div class="tabs__content">
+                    <div id='theme-1' class="swiper courses-slider open">
+                        <div class="swiper-wrapper courses-slider__wrapper">
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
+                                </div>
+                                <span>
                                         Topic: Vascular
                                     </span>
-                            <div>
-                                Difficult airways
-                            </div>
-                            <p>
-                                All intubation techniques will be practiced on professional manikins that
-                                simulate complex airways.
-                            </p>
-                            <div class="slide__info">
-                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                <div>
+                                    Difficult airways
+                                </div>
                                 <p>
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                              stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                    3 days
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
                                 </p>
-                                <span>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
                                             free
                                         </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
                             </div>
-                            <div class="slide__icon">
-                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                            </div>
-                            <div class="slide__btn">
-                                <a href="#" class="btn-gray-def">Details</a>
-                                <button class="btn-blue">Add to cart</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide courses-slider__slide">
-                            <div class="slide__img">
-                                <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
-                            </div>
-                            <span>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
+                                </div>
+                                <span>
                                         Topic: Vascular
                                     </span>
-                            <div>
-                                Difficult airways
-                            </div>
-                            <p>
-                                All intubation techniques will be practiced on professional manikins that
-                                simulate complex airways.
-                            </p>
-                            <div class="slide__info">
-                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                <div>
+                                    Difficult airways
+                                </div>
                                 <p>
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                              stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                    3 days
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
                                 </p>
-                                <span>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
                                             free
                                         </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
                             </div>
-                            <div class="slide__icon">
-                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                            </div>
-                            <div class="slide__btn">
-                                <a href="#" class="btn-gray-def">Details</a>
-                                <button class="btn-blue">Add to cart</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide courses-slider__slide">
-                            <div class="slide__img">
-                                <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
-                            </div>
-                            <span>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                                </div>
+                                <span>
                                         Topic: Vascular
                                     </span>
-                            <div>
-                                Difficult airways
-                            </div>
-                            <p>
-                                All intubation techniques will be practiced on professional manikins that
-                                simulate complex airways.
-                            </p>
-                            <div class="slide__info">
-                                <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                <div>
+                                    Difficult airways
+                                </div>
                                 <p>
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                              stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                              stroke-width="1.33333" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                    3 days
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
                                 </p>
-                                <span>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
                                             free
                                         </span>
-                            </div>
-                            <div class="slide__icon">
-                                <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
-                                <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
-                            </div>
-                            <div class="slide__btn">
-                                <a href="#" class="btn-gray-def">Details</a>
-                                <button class="btn-blue">Add to cart</button>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
                     </div>
-                    <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
+                    <div id='theme-2' class="swiper courses-slider">
+                        <div class="swiper-wrapper courses-slider__wrapper">
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
+                    </div>
+                    <div id='theme-3' class="swiper courses-slider">
+                        <div class="swiper-wrapper courses-slider__wrapper">
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
+                    </div>
+                    <div id='theme-4' class="swiper courses-slider">
+                        <div class="swiper-wrapper courses-slider__wrapper">
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
+                    </div>
+                    <div id='theme-5' class="swiper courses-slider">
+                        <div class="swiper-wrapper courses-slider__wrapper">
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses-slider__slide">
+                                <div class="slide__img">
+                                    <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
+                                </div>
+                                <span>
+                                        Topic: Vascular
+                                    </span>
+                                <div>
+                                    Difficult airways
+                                </div>
+                                <p>
+                                    All intubation techniques will be practiced on professional manikins that
+                                    simulate complex airways.
+                                </p>
+                                <div class="slide__info">
+                                    <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
+                                    <p>
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
+                                                  stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
+                                                  stroke-width="1.33333" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        3 days
+                                    </p>
+                                    <span>
+                                            free
+                                        </span>
+                                </div>
+                                <div class="slide__icon">
+                                    <img class="lazyload" data-src="img/people-icon-1.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-2.png" alt="people">
+                                    <img class="lazyload" data-src="img/people-icon-3.png" alt="people">
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#" class="btn-gray-def">Details</a>
+                                    <button class="btn-blue">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination courses-slider__pagination def-pagination"></div>
+                    </div>
                 </div>
             </div>
             <div class="speakers">
