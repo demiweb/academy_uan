@@ -58,7 +58,7 @@ function js() {
 }
 
 function img() {
-    return src('src/img/**/*.{jpg,png,svg}')
+    return src('src/img/**/*.*')
         .pipe(dest('dist/img/'))
 }
 

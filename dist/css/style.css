@@ -1283,7 +1283,9 @@ h3 {
   left: 65px;
   border-radius: 5px;
 }
-.hero__img #video iframe {
+.hero__img #video video {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
