@@ -1,0 +1,160 @@
+@import "../common/vars";
+
+.education {
+  padding: 80px 0 150px;
+}
+
+.education__wrapper {
+
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+      border-radius: 10px;
+      padding: 25px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 50px;
+      }
+
+      .card__img {
+        flex: 0 0 300px;
+        height: 150px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .card__description {
+        margin: 0 0 0 30px;
+        flex: 0 0 350px;
+
+        > span {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 700;
+          display: block;
+          margin-bottom: 12px;
+        }
+
+        > p {
+          font-size: 16px;
+          line-height: 22px;
+          color: $secondary-color;
+          margin-bottom: 20px;
+        }
+
+        .card__info {
+          display: flex;
+          justify-content: space-between;
+
+          > div {
+            margin-bottom: 0;
+
+            &:after {
+              content: attr(data-star);
+              color: $orange;
+              font-size: 18px;
+            }
+          }
+
+          > p {
+            display: flex;
+            margin-left: auto;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 400;
+
+            svg {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+
+
+      .card__progress {
+        display: flex;
+        justify-content: center;
+        flex: auto;
+
+        .progress-status {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 118px;
+          height: 118px;
+          position: relative;
+
+          > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+          }
+
+          > svg {
+            position: relative;
+
+            .progress {
+              transform-origin: center;
+              transform: rotate(-90deg);
+              transition: stroke-dashoffset .5s ease;
+            }
+          }
+        }
+      }
+
+      .card__progress.not-finished {
+        .progress-status {
+          > span {
+            color: $blue;
+          }
+
+          > svg {
+            .progress {
+              stroke: $blue;
+            }
+          }
+        }
+      }
+
+      .card__progress.finished {
+        .progress-status {
+          > span {
+            color: #34A360;
+          }
+
+          > svg {
+            .progress {
+              stroke: #34A360;
+            }
+          }
+        }
+      }
+
+
+      .card__btn {
+        display: flex;
+        align-self: flex-end;
+
+        > a {
+          width: 193px;
+          height: 40px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

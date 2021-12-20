@@ -231,10 +231,30 @@
 
     li {
       margin: 15px 0;
-      color: $primary-color;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 400;
+
+      a {
+        color: $primary-color;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+
+    li.success {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        color: #34A360;
+      }
+    }
+
+    li.current {
+      a {
+        font-weight: 600;
+      }
     }
   }
 }

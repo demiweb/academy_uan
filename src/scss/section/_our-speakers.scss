@@ -41,42 +41,75 @@
       height: 72px;
     }
 
+    //img {
+    //  &:nth-child(1) {
+    //    top: 19.78vh;
+    //    left: 30.48vw;
+    //  }
+    //
+    //  &:nth-child(2) {
+    //    top: 24.93vh;
+    //    left: 9.23vw;
+    //  }
+    //
+    //  &:nth-child(3) {
+    //    top: 60.55vh;
+    //    left: 29.09vw;
+    //  }
+    //
+    //  &:nth-child(4) {
+    //    top: 57.12vh;
+    //    left: 13.19vw;
+    //    animation: zoom-in 2500ms infinite;
+    //  }
+    //
+    //  &:nth-child(5) {
+    //    top: 42.34vh;
+    //    left: 24.44vw;
+    //    animation: zoom-in 3500ms infinite;
+    //  }
+    //
+    //  &:nth-child(6) {
+    //    top: 47.62vh;
+    //    left: 37.15vw;
+    //    animation: zoom-in 3000ms infinite;
+    //  }
+    //}
     img {
       &:nth-child(1) {
-        top: 19.78vh;
+        top: 150px;
         left: 30.48vw;
       }
 
       &:nth-child(2) {
-        top: 24.93vh;
+        top: 189px;
         left: 9.23vw;
       }
 
       &:nth-child(3) {
-        top: 60.55vh;
+        top: 495px;
         left: 29.09vw;
       }
 
       &:nth-child(4) {
-        top: 57.12vh;
+        top: 433px;
         left: 13.19vw;
         animation: zoom-in 2500ms infinite;
       }
 
       &:nth-child(5) {
-        top: 42.34vh;
+        top: 321px;
         left: 24.44vw;
         animation: zoom-in 3500ms infinite;
       }
 
       &:nth-child(6) {
-        top: 47.62vh;
+        top: 361px;
         left: 37.15vw;
         animation: zoom-in 3000ms infinite;
       }
     }
   }
-
 }
 
 .our-speakers__wrapper {

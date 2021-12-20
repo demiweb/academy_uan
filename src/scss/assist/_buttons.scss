@@ -12,3 +12,11 @@
 .btn-gray-def {
   @include btn(transparent, $secondary-color, $secondary-color, white, $blue);
 }
+
+.btn-disable {
+  @include btn(transparent, #B9C7D5, #B9C7D5, white, $blue);
+}
+
+.btn-green {
+  @include btn(#34A360, white, #34A360, #34A360, white);
+}

@@ -209,6 +209,10 @@ if (!accordion.length) {
 } else {
     accordion.forEach((accordion, idx) => {
         accordion.addEventListener('click', function (e) {
+            this.querySelectorAll('li').forEach(list => {
+                list.addEventListener('click', (e) => e.stopPropagation())
+            })
+
             const accordionContent = this.querySelector('ul')
 
             accordion.classList.toggle('open')
@@ -282,6 +286,7 @@ if (!animNum.length) {
 
 } else {
     const time = 3000;
+
     function outNum(num, elem) {
         let step = 0;
 
@@ -345,3 +350,43 @@ const lazyLoad = new LazyLoad({
 // }
 
 // onYouTubePlayerAPIReady()
+
+const circles = document.querySelectorAll('.progress')
+
+if (!circles.length) {
+
+} else {
+    circles.forEach(circle => {
+        const radius = circle.r.baseVal.value
+        const circumference = 2 * Math.PI * radius
+        const num = circle.dataset.percent
+
+        circle.style.strokeDasharray = `${circumference} ${circumference}`
+        circle.style.strokeDashoffset = circumference
+
+        function setProgress(percent) {
+            const offsetCircle = circumference - percent / 100 * circumference;
+            circle.style.strokeDashoffset = offsetCircle;
+            circle.parentElement.parentElement.querySelector('span').innerText = num + '%'
+        }
+
+        setProgress(num)
+    })
+}
+
+const moduleSuccessBtn = document.querySelectorAll('button[data-description=complete-course]')
+
+if (!moduleSuccessBtn.length) {
+
+} else {
+    moduleSuccessBtn.forEach(btn => {
+        btn.addEventListener('click', function () {
+            this.classList.add('completed')
+            this.innerHTML = `Completed 
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="23" height="23" rx="11.5" fill="#38CD46"/>
+    <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>`
+        })
+    })
+}
