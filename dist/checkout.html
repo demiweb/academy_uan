@@ -125,151 +125,111 @@
 </header>
 
 <main>
-    <section class="education bg-grey">
+    <section class="checkout bg-grey">
         <div class="container">
-            <div class="section-head-pages">
-                <h2>My certificates</h2>
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Main Page</span></a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Cart</span></a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses/real">
+                            <span itemprop="name">Checkout</span></a>
+                        <meta itemprop="position" content="3"/>
+                    </li>
+                </ol>
             </div>
-            <ul class="courses__list">
-                <li>
-                    <div class="card__img">
-                        <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
-                    </div>
-                    <div class="card__description">
-                            <span>
-                                Difficult airways
-                            </span>
-                        <p>
-                            All intubation techniques will be practiced on professional manikins that
-                            simulate complex airways.
-                        </p>
-                        <div class="card__info">
-                            <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                            <p>
-                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                          stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                          stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                                3 days
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card__progress finished">
-                        <div class="progress-status">
+            <div class="section-head-pages">
+                <h2>Checkout</h2>
+            </div>
+        </div>
+        <div class="checkout__wrapper">
+            <form>
+                <div>
+                    <h3>
+                        Personal information
+                    </h3>
+                    <label>
+                        Full Name
+                        <input type="text" placeholder="Cristina Bednar">
+                    </label>
+                    <label>
+                        E-mail
+                        <input type="email" placeholder="CrisBednar@gmail.com">
+                    </label>
+                    <label>
+                        Phone
+                        <input type="tel" placeholder="+38 (093) 11 893 98">
+                    </label>
+                </div>
+                <div>
+                    <h3>
+                        Order Summary
+                    </h3>
+                    <div>
+                        <header>
                                 <span>
-                                    0
+                                    Course
                                 </span>
-                            <svg width="118" height="118">
-                                <circle fill="transparent" stroke="#E8EEF6" stroke-width="12" cx="59" cy="59"
-                                        r="53"/>
-                                <circle class="progress" fill="transparent" stroke-width="12"
-                                        cx="59" cy="59"
-                                        r="53" data-percent="100"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="card__btn">
-                        <a href="#" class="btn-green">Download certificate</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card__img">
-                        <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
-                    </div>
-                    <div class="card__description">
                             <span>
-                                Difficult airways
-                            </span>
-                        <p>
-                            All intubation techniques will be practiced on professional manikins that
-                            simulate complex airways.
-                        </p>
-                        <div class="card__info">
-                            <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                            <p>
-                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                          stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                          stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                                3 days
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card__progress finished">
-                        <div class="progress-status">
-                                <span>
-                                    0
+                                    Price
                                 </span>
-                            <svg width="118" height="118">
-                                <circle fill="transparent" stroke="#E8EEF6" stroke-width="12" cx="59" cy="59"
-                                        r="53"/>
-                                <circle class="progress" fill="transparent" stroke-width="12"
-                                        cx="59" cy="59"
-                                        r="53" data-percent="100"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="card__btn">
-                        <a href="#" class="btn-green">Download certificate</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card__img">
-                        <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
-                    </div>
-                    <div class="card__description">
+                        </header>
+                        <p>
+                                <span>
+                                    Difficult airways
+                                </span>
                             <span>
-                                Difficult airways
-                            </span>
-                        <p>
-                            All intubation techniques will be practiced on professional manikins that
-                            simulate complex airways.
-                        </p>
-                        <div class="card__info">
-                            <div data-star="&#9733; &#9733; &#9733; &#9733; &#9733;"></div>
-                            <p>
-                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 19.75C15.5563 19.75 19.25 16.0563 19.25 11.5C19.25 6.94365 15.5563 3.25 11 3.25C6.44365 3.25 2.75 6.94365 2.75 11.5C2.75 16.0563 6.44365 19.75 11 19.75Z"
-                                          stroke="#136FF0" stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                    <path d="M11 6.91663V11.5L12.8333 14.25" stroke="#136FF0"
-                                          stroke-width="1.33333" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
-                                </svg>
-                                3 days
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card__progress finished">
-                        <div class="progress-status">
-                                <span>
-                                    0
+                                    400$
                                 </span>
-                            <svg width="118" height="118">
-                                <circle fill="transparent" stroke="#E8EEF6" stroke-width="12" cx="59" cy="59"
-                                        r="53"/>
-                                <circle class="progress" fill="transparent" stroke-width="12"
-                                        cx="59" cy="59"
-                                        r="53" data-percent="100"/>
-                            </svg>
-                        </div>
+                        </p>
+                        <p>
+                                <span>
+                                    Airways
+                                </span>
+                            <span>
+                                    400$
+                                </span>
+                        </p>
+                        <footer>
+                                <span>
+                                    Total
+                                </span>
+                            <span>
+                                    800$
+                                </span>
+                        </footer>
                     </div>
-                    <div class="card__btn">
-                        <a href="#" class="btn-green">Download certificate</a>
+                    <h3>
+                        Payment Method
+                    </h3>
+                    <div>
+                        <label class="checkbox btn-gray-def">
+                            Online payment
+                            <input type="checkbox">
+                        </label>
                     </div>
-                </li>
-            </ul>
+                    <button type="submit" class="btn-blue">Checkout</button>
+                </div>
+            </form>
         </div>
     </section>
 </main>

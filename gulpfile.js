@@ -5,6 +5,7 @@ const sass = require('gulp-sass')(require('sass'))
 const autoprefixer = require('gulp-autoprefixer')
 const csso = require('gulp-csso')
 const rename = require('gulp-rename')
+const group_media = require('gulp-group-css-media-queries')
 const uglify = require('gulp-uglify-es').default
 const browser_sync = require('browser-sync').create()
 
@@ -30,14 +31,10 @@ function html() {
         .pipe(dest('dist/'))
 }
 
-function css() {
-    return src('src/css/*.css')
-        .pipe(dest('dist/css/'))
-}
-
 function scss() {
     return src('src/scss/*.scss')
         .pipe(sass())
+        .pipe(group_media())
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(dest('dist/css/'))
         .pipe(csso())
@@ -71,15 +68,12 @@ function watchFiles() {
     watch('./src/**/*.html', series(html, browsersyncReload))
     watch('./src/scss/**/*.scss', series(scss, browsersyncReload))
     watch('./src/js/**/*.js', series(js, browsersyncReload))
-    watch('./src/css/**/*.*', series(css, browsersyncReload))
     watch('./src/img/**/*.*', series(img, browsersyncReload))
 }
-
 
 exports.default = series(
     clean,
     html,
-    css,
     scss,
     js,
     img,

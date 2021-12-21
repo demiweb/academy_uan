@@ -78,3 +78,132 @@
     }
   }
 }
+
+@media screen and (max-width: 1399px) {
+  .hero__wrapper {
+    justify-content: space-between;
+  }
+  .hero__content {
+    max-width: 60%;
+  }
+  .hero__img {
+    width: 400px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-player {
+      width: 305px;
+      height: 205px;
+      position: absolute;
+      top: 4px;
+      left: 47px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__img {
+    width: 100%;
+    height: auto;
+
+    .video-player {
+      width: 76.4%;
+      height: 88.6%;
+      position: absolute;
+      top: 5px;
+      left: 11.7%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    height: 100%;
+  }
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    > p {
+      margin: 25px auto 40px;
+    }
+
+    .content__btn {
+      justify-content: center;
+      margin-bottom: 50px;
+
+      a {
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .hero__img {
+    margin-bottom: 93px;
+
+    .video-player {
+      width: 76.4%;
+      height: 89.6%;
+      position: absolute;
+      top: 6px;
+      left: 11.7%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__content {
+    > h1 {
+      font-size: 29px;
+      line-height: 35px;
+      margin-bottom: 25px;
+    }
+
+    > p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 0;
+    }
+
+    .content__btn {
+      display: flex;
+
+      a {
+        width: 179px;
+        height: 50px;
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero__img {
+    margin-bottom: 93px;
+
+    .video-player {
+      width: 76.5%;
+      height: 89.6%;
+      position: absolute;
+      top: 1px;
+      left: 11.6%;
+    }
+  }
+}

@@ -177,3 +177,34 @@
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 1399px) {
+  .speakers__body.lg {
+    display: none;
+  }
+  .speakers__body.xl {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .speakers {
+    padding: 70px 0;
+  }
+  .speakers__body.xl {
+    display: none;
+  }
+  .speakers__body.md {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .speakers__body.md {
+    display: none;
+  }
+  .speakers__body.sm {
+    display: flex;
+  }
+}

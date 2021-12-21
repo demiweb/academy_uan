@@ -64,3 +64,26 @@
     transform: rotate(-20deg)
   }
 }
+
+@media screen and (max-width: 991px) {
+  .how-it-works {
+    margin: 50px;
+  }
+  .how-it-works__list {
+    ul {
+      columns: 2;
+
+      li {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .how-it-works__list {
+    ul {
+      columns: 1;
+    }
+  }
+}

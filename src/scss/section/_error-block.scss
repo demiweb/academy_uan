@@ -1,0 +1,62 @@
+@import "../common/vars";
+
+.error-block {
+  min-height: 600px;
+  height: 80vh;
+}
+
+.error-block__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 150px;
+      line-height: 204px;
+      font-weight: 700;
+      background: linear-gradient(95.66deg, #65A5FF 34.2%, #188FD2 111.88%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+    }
+
+    h1 {
+      font-size: 37px;
+      line-height: 43px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      width: 254px;
+      height: 50px;
+    }
+  }
+
+  .img {
+    width: 597px;
+    height: 405px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .error-block__wrapper {
+      justify-content: center;
+
+    .img {
+      display: none;
+    }
+  }
+}

@@ -337,3 +337,82 @@
     height: 50px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .speaker__img {
+    margin-right: 0;
+  }
+  .speaker__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      a {
+        &:first-of-type {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .course-details {
+    padding: 35px 0 70px;
+
+    h3 {
+      margin-bottom: 44px;
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+  .course-details__speakers {
+    padding: 70px 0;
+
+    .container > div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .course-details__wrapper {
+    margin: 35px 0 0;
+  }
+  .course-details__about {
+    margin: 70px 0;
+  }
+  .course-details__schedule {
+    margin: 50px 0;
+  }
+  .course-details__reviews {
+    padding: 70px 0;
+  }
+  .course-details__faq {
+    margin: 70px 0 0;
+  }
+  .speaker {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 50px;
+    }
+  }
+  .speaker__description {
+    > a {
+      width: 237px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .course-details__content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @@include('./parts/links.html')
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+@@include('./parts/header-logout.html')
+
+<main>
+    <section class="error-block">
+        <div class="page-section-bg">
+            <img src="img/page-section-bg.png" alt="page-section-bg" class="lazyload">
+        </div>
+        <div class="container">
+            <div class="error-block__wrapper">
+                <div class='text'>
+                    <span>
+                        404
+                    </span>
+                    <h1>
+                        Oops! Page not found
+                    </h1>
+                    <a href="#" class="btn-blue">Go to main page</a>
+                </div>
+                <div class="img">
+                    <img src="img/404-img.png" alt="404-img" class="lazyload">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./parts/footer.html')
+
+@@include('./parts/scripts.html')
+
+</body>
+</html>

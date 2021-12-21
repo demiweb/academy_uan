@@ -1,0 +1,182 @@
+@import "../common/vars";
+
+.cart {
+  padding: 50px 0 100px;
+}
+
+.cart__wrapper {
+  header {
+    display: flex;
+    margin-bottom: 30px;
+
+    span {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+
+      &:nth-of-type(1) {
+        margin-right: 808px;
+      }
+
+      &:nth-of-type(2) {
+
+      }
+    }
+  }
+
+  .courses__list {
+    .card__btn {
+      align-self: flex-start;
+    }
+  }
+
+  footer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 25px;
+      line-height: 34px;
+      font-weight: 700;
+      color: $blue;
+
+      &:nth-of-type(1) {
+        margin-right: 808px;
+      }
+
+      &:nth-of-type(2) {
+      }
+    }
+
+    a {
+      width: 220px;
+      height: 50px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cart__wrapper {
+    header {
+      span {
+        &:nth-of-type(1) {
+          margin-right: 658px;
+        }
+      }
+    }
+
+    .courses__list {
+      li {
+        .card__img {
+          margin-bottom: 0;
+          flex: 0 0 300px;
+        }
+
+        .card__description {
+          flex: 0 0 320px;
+          margin-left: 30px;
+        }
+
+        .card__btn {
+          margin-top: 0;
+        }
+      }
+    }
+
+    footer {
+      span {
+        &:nth-of-type(1) {
+          margin-right: 550px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cart__wrapper {
+    header {
+      display: none;
+    }
+
+    .courses__list {
+      li {
+        position: relative;
+
+        .card__img {
+          flex: 0 0 50%;
+        }
+
+        .card__description {
+          flex: 0 0 50%;
+          margin: 0;
+          padding-left: 20px;
+        }
+
+        .card__btn {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+      }
+    }
+
+    footer {
+      flex-wrap: wrap;
+
+      span {
+        flex: 0 0 50%;
+        margin: 0;
+
+        &:nth-of-type(1) {
+          margin: 0;
+        }
+
+        &:nth-of-type(2) {
+          text-align: end;
+        }
+      }
+
+      a {
+        justify-self: center;
+        margin: 50px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cart__wrapper {
+    .courses__list {
+      li {
+        .card__img {
+          flex: 0 0 100%;
+        }
+
+        .card__description {
+          flex: 0 0 100%;
+          padding-left: 0;
+          margin-top: 30px;
+        }
+
+        .card__btn {
+          position: absolute;
+          top: 13px;
+          right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cart__wrapper {
+    footer {
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
