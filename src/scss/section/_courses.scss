@@ -121,9 +121,26 @@
   padding: 30px 30px 43px;
   display: block;
   transition: all .5s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  backface-visibility: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: red;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+  }
 
   &:hover {
     box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+    transform: rotateY(180deg);
   }
 
   .slide__img {

@@ -123,10 +123,12 @@
   }
 
   .profile__menu {
-    display: none;
+    opacity: 0;
+    z-index: -100;
     position: absolute;
     top: 80px;
     right: 0;
+    transition: all .4s ease-in-out;
 
     > ul {
       list-style: none;
@@ -176,7 +178,8 @@
   }
 
   .profile__menu.open {
-    display: block;
+    opacity: 1;
+    z-index: 10;
   }
 }
 
@@ -227,6 +230,8 @@
       border-bottom: 2px solid black;
       width: 32px;
       position: relative;
+      transition: all .4s ease-in-out;
+
 
       &:after {
         content: '';
@@ -235,6 +240,7 @@
         display: block;
         border-bottom: 2px solid black;
         width: 32px;
+        transition: all .4s ease-in-out;
 
       }
 
@@ -245,21 +251,21 @@
         display: block;
         border-top: 2px solid black;
         width: 32px;
+        transition: all .4s ease-in-out;
+
       }
     }
   }
   .header__menu.open {
     span {
       transform: rotate(45deg);
-      transition: all .4s ease;
 
       &:after {
-        display: none;
+        opacity: 0;
       }
 
       &:before {
         top: 0;
-        transition: all .4s ease;
         transform: rotate(90deg);
       }
     }
@@ -267,15 +273,16 @@
 
   .menu__content {
     position: fixed;
-    top: -1000%;
-    left: -1000%;
-    transition: transform .4s ease;
+    top: -100vh;
+    left: 0;
+    transition: all .4s ease-in-out;
     transform: translate(0%, -100%);
+    z-index: -100;
 
     &:after {
       content: '';
       opacity: 0;
-      transition: opacity 1.5s ease;
+      transition: all 1.5s ease-in-out;
     }
   }
 
@@ -285,7 +292,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transition: transform .4s ease;
+    transition: all .4s ease-in-out;
     transform: translate(0%, 0%);
     z-index: -1;
     display: flex;

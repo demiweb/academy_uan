@@ -1,11 +1,11 @@
 @import "layout";
 
-
 // Assist
 @import "assist/buttons";
 @import "assist/slider";
 @import "assist/pagination";
 @import "assist/breadcrumb";
+@import "assist/animate";
 
 // Header
 @import "header/header";
@@ -37,3 +37,4 @@
 @import "section/cart";
 @import "section/checkout";
 @import "section/chat";
+@import "section/authorization";

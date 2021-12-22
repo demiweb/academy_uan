@@ -235,10 +235,12 @@ if (!tabs.length) {
 } else {
     tabs.forEach(tab => {
         const id = tab.getAttribute('href').replace('#', '')
-        const tabContent = document.querySelectorAll('.tabs__content .swiper')
+        const tabContent = document.querySelectorAll('.tabs__content > *')
         let quantity = tab.querySelector('.quantity')
 
-        quantity.innerHTML = document.getElementById(id).querySelectorAll('.swiper-slide').length
+        if (quantity) {
+            quantity.innerHTML = document.getElementById(id).querySelectorAll('.swiper-slide').length
+        }
 
         tab.addEventListener('click', function (event) {
             event.preventDefault()
@@ -280,6 +282,7 @@ if (!profileBtn.length) {
     })
 }
 
+// Анимация цифр
 const animNum = document.querySelectorAll('.anim-num')
 
 if (!animNum.length) {
@@ -341,6 +344,7 @@ if (!circles.length) {
     })
 }
 
+// Обработка кликов по кнопкам complete the topic
 const moduleSuccessBtn = document.querySelectorAll('button[data-description=complete-course]')
 
 if (!moduleSuccessBtn.length) {
@@ -358,6 +362,7 @@ if (!moduleSuccessBtn.length) {
     })
 }
 
+// Изменение checkbox для способа оплаты
 const paymentBtn = document.querySelectorAll('.checkbox input')
 
 if (!paymentBtn.length) {
@@ -374,5 +379,29 @@ if (!paymentBtn.length) {
                 payment.closest('.checkbox').classList.remove('btn-blue-def')
             }
         })
+    })
+}
+
+
+// Навешивание анимаций при их видимости в окне браузера
+const animate = document.querySelectorAll('.anim')
+
+if (!animate.length) {
+
+} else {
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('anim-start')
+                // entry.target.classList.remove('anim')
+                entry.target.style.animationName = entry.target.dataset.anim
+                entry.target.style.animationDelay = Number(entry.target.dataset.delay) + 'ms'
+                observer.unobserve(entry.target)
+            }
+        })
+    }, {threshold: .12})
+
+    animate.forEach(anim => {
+        observer.observe(anim)
     })
 }

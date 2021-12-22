@@ -14,13 +14,24 @@
 .news-slider__slide {
   position: relative;
   padding: 20px 30px;
-  background: rgba(51, 51, 51, 0.5);
   border-radius: 10px;
-  transition: all .5s ease;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .5s ease;
+    background: rgba(51, 51, 51, 0.5);
+  }
 
   &:hover {
     cursor: pointer;
-    background: rgba(51, 51, 51, 0);
+    &:after {
+      background: rgba(51, 51, 51, 0);
+    }
   }
 
   .slide-bg {

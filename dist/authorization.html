@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+      integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="css/style.min.css">
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="img/svg/header-logo.svg" alt="logo">
+            </div>
+            <div class="header__cart">
+                <a href="#">
+                    Cart
+                    <span class="no-empty">
+                        2
+                    </span>
+                </a>
+            </div>
+            <div class="header__menu">
+                <span>
+
+                </span>
+            </div>
+            <div class="menu__content">
+                <div class="menu__wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">Topics</a>
+                        </li>
+                        <li>
+                            <a href="#">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="header__cart">
+                        <a href="#">
+                            Cart
+                            <span class="no-empty">
+                             2
+                         </span>
+                        </a>
+                    </div>
+                    <div class="header__btn logout">
+                        <div class="profile">
+                            <img src="img/svg/Profile.svg" alt="profile">
+                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.19169 7.84623C5.33516 8.05126 5.66484 8.05126 5.80831 7.84623L10.9425 0.509178C11.0969 0.288496 10.9222 0 10.6342 0H0.365821C0.0777718 0 -0.0969126 0.288495 0.0575126 0.509178L5.19169 7.84623Z"
+                                      fill="#3A3A46"/>
+                            </svg>
+                        </div>
+                        <div class="profile__menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Profile
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        My courses
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        My certificates
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Log out
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__language">
+                        <img src="img/language-icon.png" alt="language_eu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="authorization">
+        <div class="authorization-left">
+            <div class="authorization-bg">
+                <img src="img/authorization-bg.png" alt="authorization-img" class="lazyload">
+            </div>
+            <div class="text">
+                <h2>
+                    Welcome to our international platform
+                </h2>
+                <p>
+                    Here you can find courses on interesting topics
+                    from the best speakers
+                </p>
+            </div>
+        </div>
+        <div class="authorization-right">
+            <div class="tabs__btn">
+                <a href="#authorization" class="active">Authorization</a>
+                <a href="#create-account">Create a personal account</a>
+            </div>
+            <div class="tabs__content">
+                <div id="authorization" class="open">
+                    <form>
+                        <label>
+                            E-mail
+                            <input type="email">
+                        </label>
+                        <label>
+                            Password
+                            <input type="password">
+                        </label>
+                        <button type="submit" class="btn-blue">
+                            Authorization
+                        </button>
+                    </form>
+                </div>
+                <div id="create-account">
+                    <form>
+                        <label>
+                            Full Name
+                            <input type="email" placeholder="Cristina Bednar">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email">
+                        </label>
+                        <label>
+                            Phone
+                            <input type="tel">
+                        </label>
+                        <label>
+                            Password
+                            <input type="password">
+                        </label>
+                        <label>
+                            Confirm password
+                            <input type="password">
+                        </label>
+                        <button type="submit" class="btn-blue">
+                            Create account
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+        integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="js/main.min.js"></script>-->
+
+</body>
+</html>
