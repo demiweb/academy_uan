@@ -7,6 +7,9 @@
 .chat__wrapper {
   background: #FFFFFF;
   box-shadow: 0 7px 50px rgba(29, 72, 182, 0.13);
+  max-width: 1290px;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .chat__header {
@@ -16,11 +19,11 @@
   padding: 0 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  position: relative;
 
   .curators {
     display: flex;
-    justify-self: flex-start;
 
     .person {
       display: flex;
@@ -51,7 +54,8 @@
 
   h3 {
     color: #fff;
-    margin-right: 50%;
+    position: absolute;
+    right: 50%;
     transform: translateX(50%);
   }
 }
@@ -76,7 +80,7 @@
 
 
   .icon {
-    width: 35px;
+    flex: 0 0 35px;
     height: 35px;
     align-self: flex-end;
 
@@ -167,18 +171,78 @@
 }
 
 @media screen and (max-width: 1199px) {
-.message {
-  .body {
-    max-width: 325px;
+  .message {
+    .body {
+      max-width: 325px;
+    }
   }
-}
 }
 
 @media screen and (max-width: 991px) {
+  .chat {
+    padding: 70px 0;
+  }
+  .chat__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 179px;
+
+    .curators {
+      order: 2;
+    }
+
+    h3 {
+      order: 1;
+      position: relative;
+      right: auto;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      margin: 0 auto 12px;
+      transform: translate(0);
+    }
+  }
   .message {
     .body {
       max-width: none;
       width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chat__body {
+    padding: 65px 20px 0;
+  }
+
+  .chat__footer {
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label {
+      &:first-of-type {
+        width: 84.47%;
+      }
+    }
+
+    textarea {
+      order: 1;
+      margin: 0;
+    }
+
+    button {
+      order: 3;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 13px;
+    }
+
+    .input-file {
+      order: 2;
+      margin: 0;
     }
   }
 }

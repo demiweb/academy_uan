@@ -1,13 +1,13 @@
 @import '../common/vars';
 
 .about-course {
-  padding-bottom: 50px;
+  padding: 50px 0;
   height: 525px;
 
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .description {
@@ -100,10 +100,6 @@
   }
 }
 
-@media screen and (max-width: 1399px) {
-
-}
-
 @media screen and (max-width: 1199px) {
   .about-course {
     height: auto;
@@ -124,10 +120,6 @@
         .speaker {
           flex-direction: row;
 
-          .speaker__img {
-
-          }
-
           .speaker__description {
             margin-left: 20px;
             flex: 0 0 calc(100% - 109px);
@@ -144,13 +136,45 @@
 }
 
 @media screen and (max-width: 991px) {
+  .about-course {
+    padding: 70px 0;
+    h3 {
+      font-weight: 700;
+    }
 
-}
+    .speakers {
+      h3 {
+        color: $primary-color;
+      }
 
-@media screen and (max-width: 767px) {
+      > div {
+        height: auto;
+        overflow-y: auto;
 
-}
+        .speaker {
+          flex-direction: column;
+          align-items: center;
+          .speaker__img {
+            margin-bottom: 20px;
+          }
 
-@media screen and (max-width: 575px) {
+          .speaker__description {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin-left: 0;
 
+            > div {
+              margin: 0 0 20px;
+            }
+
+            > a {
+              flex: 0 0 auto;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }

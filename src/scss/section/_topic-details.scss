@@ -1,13 +1,14 @@
 @import '../common/vars';
 
 .topic-details {
-  padding-bottom: 100px;
   .course-details__schedule {
     margin: 0;
   }
 }
 
 .topic-details__video {
+  padding-bottom: 100px;
+
   h3 {
     padding: 50px 0 40px;
   }
@@ -51,11 +52,13 @@
       height: 50px;
       margin-right: 30px;
     }
+
     button.completed {
       width: 190px;
       color: white;
       background: linear-gradient(#65A5FF 100%, #188FD2 100%);
       border: none;
+
       svg {
         margin-left: 10px;
       }
@@ -75,22 +78,29 @@
   }
 }
 
-@media screen and (max-width: 1399px) {
-
-}
-
-@media screen and (max-width: 1199px) {
-
-}
-
 @media screen and (max-width: 991px) {
+  .topic-details {
+    padding: 50px 0 0;
+  }
+  .topic-details__video {
+    padding-bottom: 64px;
 
-}
-
-@media screen and (max-width: 767px) {
-
+  }
 }
 
 @media screen and (max-width: 575px) {
+  .topic-details__video {
+    .video__btn {
+      flex-direction: column;
 
+      button {
+        width: 100%;
+        margin: 0 0 30px;
+      }
+
+      a {
+        width: 100%;
+      }
+    }
+  }
 }
