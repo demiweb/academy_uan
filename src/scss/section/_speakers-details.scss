@@ -2,6 +2,12 @@
 
 .speakers-details {
   position: relative;
+  .courses {
+    padding-bottom: 70px;
+  }
+  .speakers {
+    padding-bottom: 70px;
+  }
 }
 
 .speakers-details__description {
@@ -93,6 +99,14 @@
 }
 
 @media screen and (max-width: 991px) {
+  .speakers-details {
+    .courses {
+      padding-bottom: 40px;
+    }
+    .speakers {
+      padding-bottom: 40px;
+    }
+  }
   .speakers-details__description {
     display: flex;
     flex-direction: column;

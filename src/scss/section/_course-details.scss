@@ -125,12 +125,13 @@
 }
 
 .course-details__speakers {
-  padding: 80px 0;
-
   .container > div {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+  .speakers {
+    padding: 80px 75px;
   }
 }
 
@@ -141,9 +142,10 @@
 }
 
 .speaker__img {
-  flex: 0 0 129px;
   height: 129px;
   margin-right: 20px;
+  width: 129px;
+  flex: 0 0 129px;
 
   img {
     width: 100%;
@@ -337,6 +339,13 @@
     height: 50px;
   }
 }
+@media screen and (max-width: 1439px){
+  .course-details__speakers {
+    .speakers {
+      padding: 80px 20px;
+    }
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .speaker {
@@ -375,11 +384,13 @@
     }
   }
   .course-details__speakers {
-    padding: 70px 0;
-
     .container > div {
       display: flex;
       flex-direction: column;
+    }
+
+    .speakers {
+      padding: 70px 20px;
     }
   }
   .course-details__wrapper {
@@ -414,5 +425,11 @@
 @media screen and (max-width: 575px) {
   .course-details__content {
     width: 100%;
+  }
+
+  .course-details__btn {
+    a {
+      width: 100%;
+    }
   }
 }

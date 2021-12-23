@@ -386,22 +386,43 @@ if (!paymentBtn.length) {
 // Навешивание анимаций при их видимости в окне браузера
 const animate = document.querySelectorAll('.anim')
 
+
 if (!animate.length) {
 
 } else {
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('anim-start')
-                // entry.target.classList.remove('anim')
-                entry.target.style.animationName = entry.target.dataset.anim
-                entry.target.style.animationDelay = Number(entry.target.dataset.delay) + 'ms'
-                observer.unobserve(entry.target)
+
+
+                if (entry.target.classList.contains('anim-heading') || entry.target.classList.contains('anim-name')) {
+                    entry.target.classList.add('anim-start')
+
+                    let timeDelay = 0
+                    entry.target.querySelectorAll('span').forEach(letter => {
+                        timeDelay = timeDelay + 100
+                        letter.classList.add('anim-start')
+                        letter.style.animationDelay = timeDelay + 'ms'
+                        letter.style.animationName = "smoke"
+                    })
+
+                    observer.unobserve(entry.target)
+                } else {
+                    entry.target.classList.add('anim-start')
+                    entry.target.style.animationName = entry.target.dataset.anim
+                    entry.target.style.animationDelay = Number(entry.target.dataset.delay) + 'ms'
+
+                    observer.unobserve(entry.target)
+                }
             }
         })
-    }, {threshold: .12})
+    }, {threshold: .1})
 
     animate.forEach(anim => {
         observer.observe(anim)
     })
+
+
 }
+
+

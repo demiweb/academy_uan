@@ -8,7 +8,7 @@
 .news-details__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
   .img {
     width: 40.31%;
     height: 500px;
@@ -48,7 +48,6 @@
 }
 
 .news-details__wrapper {
-  margin-bottom: 70px;
   .news-slider__slide {
     padding: 30px 20px;
     .slide__content {
@@ -64,7 +63,7 @@
   .news-details__description {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 
     .img {
       width: 500px;

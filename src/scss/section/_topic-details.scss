@@ -93,10 +93,11 @@
     .video__btn {
       flex-direction: column;
 
-      button {
+      button, button.completed {
         width: 100%;
         margin: 0 0 30px;
       }
+
 
       a {
         width: 100%;

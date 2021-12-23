@@ -3,20 +3,25 @@
 
 .btn-blue {
   @include btn($blue, white, $blue, $blue, white);
+  animation: box-shadow 2s ease-in-out infinite;
 }
 
 .btn-blue-def {
   @include btn(transparent, $blue, $blue, transparent, $blue);
+  animation: box-shadow 2s ease-in-out infinite;
 }
 
 .btn-gray-def {
   @include btn(transparent, $secondary-color, $secondary-color, white, $blue);
+  animation: box-shadow 2s ease-in-out infinite;
 }
 
 .btn-disable {
   @include btn(transparent, #B9C7D5, #B9C7D5, white, $blue);
+  animation: box-shadow 2s ease-in-out infinite;
 }
 
 .btn-green {
   @include btn(#34A360, white, #34A360, #34A360, white);
+  animation: box-shadow 2s ease-in-out infinite;
 }

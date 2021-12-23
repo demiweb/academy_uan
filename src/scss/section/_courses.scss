@@ -132,15 +132,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: red;
+    background: white;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-
   }
 
   &:hover {
     box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
-    transform: rotateY(180deg);
   }
 
   .slide__img {
@@ -250,7 +248,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 
   .card {
     text-decoration: none;
@@ -259,8 +256,25 @@
     box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
     padding: 20px 20px 43px;
     display: block;
-    margin-bottom: 40px;
     transition: all .5s ease;
+    margin-bottom: 40px;
+    backface-visibility: hidden;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: white;
+      backface-visibility: hidden;
+      transform: rotateX(180deg);
+    }
 
     &:hover {
       box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
@@ -389,6 +403,10 @@
 
   .card {
     width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

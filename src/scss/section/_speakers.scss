@@ -2,8 +2,8 @@
 @import "../common/mixins";
 
 .speakers {
-  padding: 80px 0;
   background: #F6F8F9;
+  padding: 80px 0;
 }
 
 .speakers-slider {
@@ -206,5 +206,10 @@
   }
   .speakers__body.sm {
     display: flex;
+    .card {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
