@@ -392,8 +392,7 @@ if (!animate.length) {
 } else {
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-
+            if (entry.intersectionRatio) {
 
                 if (entry.target.classList.contains('anim-heading') || entry.target.classList.contains('anim-name')) {
                     entry.target.classList.add('anim-start')
