@@ -38,8 +38,18 @@ new Swiper(".topics-slider", {
             slidesPerColumnFill: 'row',
             spaceBetween: 0,
         }
+    },
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
 
-    }
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
+        }
+    },
 })
 
 new Swiper('.courses-slider', {
@@ -67,6 +77,18 @@ new Swiper('.courses-slider', {
         0: {
             slidesPerView: 1,
             spaceBetween: 0,
+        }
+    },
+
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
         }
     },
 });
@@ -108,6 +130,17 @@ new Swiper('.speakers-slider', {
         }
     },
 
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
+        }
+    },
 });
 
 new Swiper('.news-slider', {
@@ -136,6 +169,18 @@ new Swiper('.news-slider', {
             spaceBetween: 0,
         },
     },
+
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
+        }
+    },
 });
 
 new Swiper('.themes-slider', {
@@ -153,7 +198,19 @@ new Swiper('.themes-slider', {
         0: {
             watchOverflow: true,
         }
-    }
+    },
+
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
+        }
+    },
 });
 
 new Swiper('.reviews-slider', {
@@ -177,7 +234,19 @@ new Swiper('.reviews-slider', {
             slidesPerView: 1,
             spaceBetween: 0,
         }
-    }
+    },
+
+    on: {
+        init() {
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop();
+            });
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start();
+            });
+        }
+    },
 });
 
 // Бургер меню в header
@@ -288,32 +357,34 @@ const animNum = document.querySelectorAll('.anim-num')
 if (!animNum.length) {
 
 } else {
-    const time = 3000;
+    if (!(window.innerWidth < 991)) {
+        const time = 3000;
 
-    function outNum(num, elem) {
-        let step = 0;
+        function outNum(num, elem) {
+            let step = 0;
 
-        if (num < 200) {
-            step = 1;
-        } else {
-            step = 10;
-        }
-        let n = 0
-        let t = Math.round(time / (num / step));
-        let interval = setInterval(() => {
-            n = n + step;
-            if (n === num) {
-                clearInterval(interval)
+            if (num < 200) {
+                step = 1;
+            } else {
+                step = 10;
             }
-            elem.innerHTML = n + '+'
-        }, t)
+            let n = 0
+            let t = Math.round(time / (num / step));
+            let interval = setInterval(() => {
+                n = n + step;
+                if (n === num) {
+                    clearInterval(interval)
+                }
+                elem.innerHTML = n + '+'
+            }, t)
 
+        }
+
+        animNum.forEach(anim => {
+            const number = Number(anim.dataset.num)
+            outNum(number, anim)
+        })
     }
-
-    animNum.forEach(anim => {
-        const number = Number(anim.dataset.num)
-        outNum(number, anim)
-    })
 }
 
 // Lazyload картинок
@@ -386,7 +457,6 @@ if (!paymentBtn.length) {
 // Навешивание анимаций при их видимости в окне браузера
 const animate = document.querySelectorAll('.anim')
 
-
 if (!animate.length) {
 
 } else {
@@ -394,9 +464,7 @@ if (!animate.length) {
         entries.forEach(entry => {
             if (entry.intersectionRatio) {
 
-                if (entry.target.classList.contains('anim-heading') ||
-                    entry.target.classList.contains('anim-name')) {
-
+                if (entry.target.classList.contains('anim-heading')) {
                     entry.target.classList.add('anim-start')
 
                     let timeDelay = 0
@@ -406,6 +474,9 @@ if (!animate.length) {
                         letter.style.animationDelay = timeDelay + 'ms'
                         letter.style.animationName = "smoke"
                     })
+
+                    const dragDelay = (entry.target.querySelectorAll('span').length * 100) + 1400
+                    entry.target.style.animationDelay = dragDelay + 'ms'
 
                     observer.unobserve(entry.target)
                 } else {
@@ -419,11 +490,11 @@ if (!animate.length) {
         })
     }, {threshold: .1})
 
-    animate.forEach(anim => {
-        observer.observe(anim)
-    })
-
-
+    if (window.innerWidth > 767) {
+        animate.forEach(anim => {
+            observer.observe(anim)
+        })
+    }
 }
 
 

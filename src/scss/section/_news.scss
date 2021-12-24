@@ -33,6 +33,7 @@
 
     &:after {
       background: rgba(51, 51, 51, 0);
+      z-index: -1;
     }
   }
 
@@ -75,6 +76,7 @@
       max-width: 150px;
       margin-left: auto;
       transition: all .4s ease;
+      z-index: 20;
 
       &:hover {
         span {
@@ -132,6 +134,7 @@
       cursor: pointer;
       &:after {
         background: none;
+        z-index: -1;
       }
     }
 
@@ -174,6 +177,7 @@
         max-width: 150px;
         margin-left: auto;
         transition: all .4s ease;
+        z-index: 20;
 
         &:hover {
           span {
