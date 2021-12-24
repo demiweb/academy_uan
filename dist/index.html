@@ -14,46 +14,249 @@
 <link rel="stylesheet" href="css/style.min.css">
 
     <style>
-        a {
-            display: block;
-            margin: 25px 0;
-            color: #136FF0;
-            font-weight: 700;
-            font-size: 20px;
-            text-decoration: none;
-            transition: all .5s ease;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        a:hover {
-            color: darkblue;
+        .pages {
+            background: #204177;
+        }
+
+        .pages h1 {
+            text-align: center;
+            padding: 30px 0 50px;
+            color: #fff;
+        }
+
+        .pages__list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .page__item {
+            width: 24%;
+            height: 200px;
+        }
+
+        .page__item:nth-child(1),
+        .page__item:nth-child(5),
+        .page__item:nth-child(9),
+        .page__item:nth-child(13),
+        .page__item:nth-child(17),
+        .page__item:nth-child(21) {
+            margin: 0 calc(4% / 3) 20px 0;
+        }
+
+        .page__item:nth-child(3),
+        .page__item:nth-child(7),
+        .page__item:nth-child(11),
+        .page__item:nth-child(15),
+        .page__item:nth-child(19),
+        .page__item:nth-child(23) {
+            margin: 0 calc(4% / 3) 20px;
+        }
+
+        .page__item a {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            filter: brightness(40%);
+            z-index: 5;
+            transition: filter .3s ease;
+        }
+
+        .page__item a:hover {
+            filter: brightness(100%);
+        }
+
+        .page__item a iframe {
+            transform: scale(.2);
+            transform-origin: left top;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .page__item a p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            color: #136FF0;
+        }
+
+        @media screen and (max-width: 991px) {
+            .page__item {
+                width: 32%;
+                height: 175px;
+            }
+
+            .page__item:nth-child(odd),
+            .page__item:nth-child(even) {
+                margin: 0;
+            }
+
+            .page__item:nth-child(3n + 2) {
+                margin: 0 calc(4% / 2) 20px;
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .page__item {
+                width: 100%;
+                height: 250px;
+            }
+
+            .page__item:nth-child(odd),
+            .page__item:nth-child(even) {
+                margin: 0 0 15px;
+            }
         }
     </style>
-
     <title>AcademyUan</title>
 </head>
 <body>
 
 <div class="pages">
     <div class="container">
-        <a href="main.html" target="_blank">Main</a>
-        <a href="topics-page.html" target="_blank">Topics</a>
-        <a href="courses-page.html" target="_blank">Courses</a>
-        <a href="courses-details-page.html" target="_blank">Course Details</a>
-        <a href="contact-us-page.html" target="_blank">Contact Us</a>
-        <a href="news-page.html" target="_blank">News</a>
-        <a href="news-details-page.html" target="_blank">News Details</a>
-        <a href="speakers-page.html" target="_blank">Speakers</a>
-        <a href="speakers-details-page.html" target="_blank">Speakers Details</a>
-        <a href="about-us.html" target="_blank">About Us</a>
-        <a href="personal-account.html" target="_blank">Personal Account</a>
-        <a href="my-courses.html" target="_blank">My Courses</a>
-        <a href="my-certificates.html" target="_blank">My Certificates</a>
-        <a href="module-details.html" target="_blank">Module Details</a>
-        <a href="topic-details.html" target="_blank">Topic Details</a>
-        <a href="404.html" target="_blank">404</a>
-        <a href="cart.html" target="_blank">Cart</a>
-        <a href="checkout.html" target="_blank">Checkout</a>
-        <a href="authorization.html" target="_blank">Authorization</a>
+        <h1>Pages</h1>
+
+        <ol class="pages__list">
+            <li class="page__item">
+                <a href="main.html" target="_blank">
+                    <iframe src="main.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Main</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="topics-page.html" target="_blank">
+                    <iframe src="topics-page.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Topics</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="courses-page.html" target="_blank">
+                    <iframe src="courses-page.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Courses</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="courses-details-page.html" target="_blank">
+                    <iframe src="courses-details-page.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>Course Details</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="contact-us-page.html" target="_blank">
+                    <iframe src="contact-us-page.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>Contact Us</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="news-page.html" target="_blank">
+                    <iframe src="news-page.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>News</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="news-details-page.html" target="_blank">
+                    <iframe src="news-details-page.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>News Details</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="speakers-page.html" target="_blank">
+                    <iframe src="speakers-page.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Speakers</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="speakers-details-page.html" target="_blank">
+                    <iframe src="speakers-details-page.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>Speakers Details</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="about-us.html" target="_blank">
+                    <iframe src="about-us.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>About Us</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="personal-account.html" target="_blank">
+                    <iframe src="personal-account.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>Personal Account</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="my-courses.html" target="_blank">
+                    <iframe src="my-courses.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>My Courses</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="my-certificates.html" target="_blank">
+                    <iframe src="my-certificates.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>My Certificates</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="module-details.html" target="_blank">
+                    <iframe src="module-details.html" frameborder="0" scrolling="no" width="500%"
+                            height="500%"></iframe>
+                    <p>Module Details</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="topic-details.html" target="_blank">
+                    <iframe src="topic-details.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Topic Details</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="404.html" target="_blank">
+                    <iframe src="404.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>404</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="cart.html" target="_blank">
+                    <iframe src="cart.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Cart</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="checkout.html" target="_blank">
+                    <iframe src="checkout.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Checkout</p>
+                </a>
+            </li>
+            <li class="page__item">
+                <a href="authorization.html" target="_blank">
+                    <iframe src="authorization.html" frameborder="0" scrolling="no" width="500%" height="500%"></iframe>
+                    <p>Authorization</p>
+                </a>
+            </li>
+        </ol>
     </div>
 </div>
 </body>
