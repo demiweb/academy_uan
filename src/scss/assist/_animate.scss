@@ -10,8 +10,9 @@
 }
 
 .anim-heading {
-  animation: drag 1s linear forwards infinite;
+  animation: drag 1s ease-in-out forwards infinite;
   opacity: 1 !important;
+
   span {
     opacity: 0;
   }
@@ -20,6 +21,7 @@
 .anim-name {
   animation: change-color 4s ease-in-out forwards infinite;
   opacity: 1 !important;
+
   span {
     opacity: 0;
   }
@@ -237,5 +239,36 @@
   100% {
     color: $primary-color;
     opacity: 1;
+  }
+}
+
+@keyframes brightness {
+  0% {
+    filter: brightness(0);
+
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes noise-1 {
+  $steps: 30;
+  @for $i from 1 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
   }
 }

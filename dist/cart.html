@@ -128,9 +128,11 @@
     <section class="cart bg-grey">
         <div class="container">
             <div class="section-head-pages">
-                <h2>Cart</h2>
+                <h2 class="anim-heading anim">
+                    <span>C</span><span>a</span><span>r</span><span>t</span>
+                </h2>
             </div>
-            <div class="cart__wrapper">
+            <div class="cart__wrapper anim" data-anim="fade" data-delay="0">
                 <header>
                    <span>
                        Course
@@ -140,7 +142,7 @@
                    </span>
                 </header>
                 <ul class="courses__list">
-                    <li>
+                    <li class="anim" data-anim="zoom" data-delay="150">
                         <div class="card__img">
                             <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
                         </div>
@@ -186,7 +188,7 @@
                             </button>
                         </div>
                     </li>
-                    <li>
+                    <li class="anim" data-anim="zoom" data-delay="300">
                         <div class="card__img">
                             <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
                         </div>
@@ -248,11 +250,16 @@
     <section class="may-also-like bg-grey">
         <div class="container">
             <div class="section-head-pages">
-                <h2>You may also like</h2>
+                <h2 class="anim-heading anim">
+                    <span>Y</span><span>o</span><span>u</span>
+                    <span>m</span><span>a</span><span>y</span>
+                    <span>a</span><span>l</span><span>s</span><span>o</span>
+                    <span>l</span><span>i</span><span>k</span><span>e</span>
+                </h2>
             </div>
             <div class="swiper courses-slider">
                 <div class="swiper-wrapper courses-slider__wrapper">
-                    <div class="swiper-slide courses-slider__slide">
+                    <div class="swiper-slide courses-slider__slide anim" data-anim="flip" data-delay="100">
                         <div class="slide__img">
                             <img class="lazyload" data-src="img/courses-img-1.png" alt="card-img">
                         </div>
@@ -294,7 +301,7 @@
                             <button class="btn-blue">Add to cart</button>
                         </div>
                     </div>
-                    <div class="swiper-slide courses-slider__slide">
+                    <div class="swiper-slide courses-slider__slide anim" data-anim="flip" data-delay="200">
                         <div class="slide__img">
                             <img class="lazyload" data-src="img/courses-img-2.png" alt="card-img">
                         </div>
@@ -336,7 +343,7 @@
                             <button class="btn-blue">Add to cart</button>
                         </div>
                     </div>
-                    <div class="swiper-slide courses-slider__slide">
+                    <div class="swiper-slide courses-slider__slide anim" data-anim="flip" data-delay="300">
                         <div class="slide__img">
                             <img class="lazyload" data-src="img/courses-img-3.png" alt="card-img">
                         </div>
@@ -505,7 +512,7 @@
         integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="js/main.js"></script>
 <!--<script src="js/main.min.js"></script>-->
 
 </body>
