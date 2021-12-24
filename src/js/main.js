@@ -394,7 +394,9 @@ if (!animate.length) {
         entries.forEach(entry => {
             if (entry.intersectionRatio) {
 
-                if (entry.target.classList.contains('anim-heading') || entry.target.classList.contains('anim-name')) {
+                if (entry.target.classList.contains('anim-heading') ||
+                    entry.target.classList.contains('anim-name')) {
+
                     entry.target.classList.add('anim-start')
 
                     let timeDelay = 0

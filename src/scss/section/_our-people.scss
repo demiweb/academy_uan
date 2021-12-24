@@ -37,9 +37,14 @@
   right: 0;
   height: 100%;
 
-  .small-icon, .medium-icon, .big-icon, .small-circle, .big-circle {
+  .icon__wrapper, .small-circle, .big-circle {
     position: absolute;
     border-radius: 50%;
+  }
+
+  .icon__wrapper {
+    width: content-box;
+    height: content-box;
   }
 
   .big-icon {
@@ -69,7 +74,7 @@
     background: $blue;
   }
 
-  img {
+  .icon__wrapper {
     &:nth-child(1) {
       top: 12.05%;
       left: 5.96%;
