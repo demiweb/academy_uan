@@ -101,6 +101,27 @@
   }
 }
 
+@keyframes fade-zoom-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-120%) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes fade-zoom-right {
+  0% {
+    opacity: 0;
+    transform: translateX(120%) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
 @keyframes smoke {
   0% {
     opacity: 0;
