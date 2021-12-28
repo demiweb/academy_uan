@@ -278,7 +278,7 @@ if (!accordion.length) {
 } else {
     accordion.forEach((accordion, idx) => {
         accordion.addEventListener('click', function (e) {
-            this.querySelectorAll('li').forEach(list => {
+            this.querySelectorAll('*:not(.accordion-title)').forEach(list => {
                 list.addEventListener('click', (e) => e.stopPropagation())
             })
 
