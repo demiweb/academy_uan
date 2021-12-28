@@ -1291,6 +1291,7 @@ h3 {
 
 .footer__nav ul {
   list-style: none;
+  max-height: none;
 }
 
 .footer__nav ul > li {
@@ -5069,7 +5070,7 @@ h3 {
 }
 
 .authorization {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5078,7 +5079,7 @@ h3 {
 
 .authorization-left {
   width: 43.75%;
-  height: 100%;
+  height: auto;
   position: relative;
 }
 

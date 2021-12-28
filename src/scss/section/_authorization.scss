@@ -1,13 +1,13 @@
 @import "../common/vars";
 
 .authorization {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: flex;
 }
 
 .authorization-left {
   width: 43.75%;
-  height: 100%;
+  height: auto;
   position: relative;
 
   .authorization-bg {
