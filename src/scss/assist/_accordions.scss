@@ -1,0 +1,7 @@
+@import "../common/_vars.scss";
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+}

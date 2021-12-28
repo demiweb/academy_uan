@@ -2,7 +2,7 @@
 
 .error-block {
   min-height: 600px;
-  height: 80vh;
+  height: calc(100vh - 80px);
 }
 
 .error-block__wrapper {

@@ -2,9 +2,11 @@
 
 .speakers-details {
   position: relative;
+
   .courses {
     padding-bottom: 70px;
   }
+
   .speakers {
     padding-bottom: 70px;
   }
@@ -34,6 +36,7 @@
   .text {
     margin-left: 30px;
     width: 74.41%;
+    position: relative;
 
     h3 {
       margin-bottom: 10px;
@@ -77,11 +80,60 @@
       margin-bottom: 30px;
     }
 
-    a {
+    .title {
       color: $blue;
       font-size: 18px;
       line-height: 25px;
       font-weight: 600;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .more-info {
+      position: relative;
+      bottom: -20px;
+
+      h4 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-top: 40px;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 19px;
+        display: block;
+        margin-top: 10px;
+        color: $secondary-color;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 30px 0;
+      }
+
+      ul, ol {
+        margin: 40px 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 20px;
+          }
+
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -103,6 +155,7 @@
     .courses {
       padding-bottom: 40px;
     }
+
     .speakers {
       padding-bottom: 40px;
     }

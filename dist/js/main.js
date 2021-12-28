@@ -282,7 +282,7 @@ if (!accordion.length) {
                 list.addEventListener('click', (e) => e.stopPropagation())
             })
 
-            const accordionContent = this.querySelector('ul')
+            const accordionContent = this.querySelector('.accordion-content')
 
             accordion.classList.toggle('open')
 
@@ -351,47 +351,13 @@ if (!profileBtn.length) {
     })
 }
 
-// Анимация цифр
-const animNum = document.querySelectorAll('.anim-num')
-
-if (!animNum.length) {
-
-} else {
-    if (!(window.innerWidth < 991)) {
-        const time = 3000;
-
-        function outNum(num, elem) {
-            let step = 0;
-
-            if (num < 200) {
-                step = 1;
-            } else {
-                step = 10;
-            }
-            let n = 0
-            let t = Math.round(time / (num / step));
-            let interval = setInterval(() => {
-                n = n + step;
-                if (n === num) {
-                    clearInterval(interval)
-                }
-                elem.innerHTML = n + '+'
-            }, t)
-
-        }
-
-        animNum.forEach(anim => {
-            const number = Number(anim.dataset.num)
-            outNum(number, anim)
-        })
-    }
-}
-
 // Lazyload картинок
 const lazyLoad = new LazyLoad({
     elements_selector: '.lazyload'
 })
 
+
+// Создаем шкалу прогресса в виде круга
 const circles = document.querySelectorAll('.progress')
 
 if (!circles.length) {
