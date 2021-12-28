@@ -5609,6 +5609,11 @@ h3 {
     line-height: 44px;
   }
 
+  h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   h2 {
     font-size: 32px;
     line-height: 44px;
@@ -6414,7 +6419,7 @@ h3 {
             flex: 100%;
   }
 
-  .about-us__wrapper .text h2 {
+  .about-us__wrapper .text h1 {
     display: none;
   }
 
