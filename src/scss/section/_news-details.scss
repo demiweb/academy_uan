@@ -1,8 +1,12 @@
 @import "../common/vars";
 
 .news-details {
-  min-height: 100vh;
+  min-height: 600px;
+  height: auto;
   position: relative;
+  .page-section-bg {
+    max-height: none;
+  }
 }
 
 .news-details__description {
@@ -34,7 +38,6 @@
       max-width: 515px;
       font-size: 14px;
       color: $secondary-color;
-      margin-bottom: 50px;
     }
 
     > p {
@@ -42,6 +45,65 @@
       line-height: 22px;
       &:not(:last-of-type) {
         margin-bottom: 30px;
+      }
+    }
+
+    .info-title {
+      color: $blue;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+      text-decoration: underline;
+      z-index: 20;
+      position: relative;
+      padding-top: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .more-info {
+      position: relative;
+      max-height: 100px;
+
+      h4 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-top: 40px;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 19px;
+        display: block;
+        margin-top: 10px;
+        color: $secondary-color;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 30px 0;
+      }
+
+      ul, ol {
+        margin: 40px 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 20px;
+          }
+
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }
