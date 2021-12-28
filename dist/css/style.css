@@ -5600,16 +5600,16 @@ h3 {
             align-items: center;
   }
 
+  .section-head span {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   .section-head-pages {
     margin-bottom: 50px;
   }
 
   .section-head-pages h1 {
-    font-size: 32px;
-    line-height: 44px;
-  }
-
-  h1 {
     font-size: 32px;
     line-height: 44px;
   }
