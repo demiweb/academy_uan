@@ -3458,7 +3458,6 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .speakers-details__description .text .info > div {
@@ -3499,9 +3498,6 @@ h3 {
   z-index: 20;
   position: relative;
   padding-top: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(246, 248, 249, 0.7)), to(rgba(246, 248, 249, 0.5)));
-  background: -o-linear-gradient(bottom, rgba(246, 248, 249, 0.7) 0%, rgba(246, 248, 249, 0.5));
-  background: linear-gradient(0deg, rgba(246, 248, 249, 0.7) 0%, rgba(246, 248, 249, 0.5));
 }
 
 .speakers-details__description .text .info-title:hover {
@@ -3510,7 +3506,6 @@ h3 {
 
 .speakers-details__description .text .more-info {
   position: relative;
-  bottom: -20px;
   max-height: 100px;
 }
 

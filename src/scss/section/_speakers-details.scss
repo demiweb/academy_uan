@@ -53,8 +53,6 @@
 
     .info {
       display: flex;
-      margin-bottom: 30px;
-
       > div {
         display: flex;
         align-items: center;
@@ -89,7 +87,6 @@
       z-index: 20;
       position: relative;
       padding-top: 20px;
-      background: linear-gradient(0deg, rgba(246, 248, 249, .7) 0%, rgba(246, 248, 249, .5));
 
       &:hover {
         cursor: pointer;
@@ -98,7 +95,6 @@
 
     .more-info {
       position: relative;
-      bottom: -20px;
       max-height: 100px;
 
       h4 {

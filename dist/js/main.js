@@ -290,7 +290,6 @@ if (!accordion.length) {
                 accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
             } else {
                 accordionContent.style.maxHeight = null
-
             }
         })
     })
