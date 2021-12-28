@@ -29,9 +29,6 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 23px;
-        svg {
-          animation: rotate-20 2000ms infinite;
-        }
       }
 
       .title {
@@ -50,18 +47,6 @@
         text-align: center;
       }
     }
-  }
-}
-
-@keyframes rotate-20 {
-  0% {
-    transform: rotate(-20deg);
-  }
-  50% {
-    transform: rotate(20deg)
-  }
-  100% {
-    transform: rotate(-20deg)
   }
 }
 

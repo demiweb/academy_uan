@@ -9,15 +9,6 @@
   animation-fill-mode: forwards;
 }
 
-.anim-heading {
-  animation: drag 1s ease-in-out forwards;
-  opacity: 1 !important;
-
-  span {
-    opacity: 0;
-  }
-}
-
 .anim-icon {
   animation: pulse 2s ease-in-out infinite;
 }
@@ -28,50 +19,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    transform: translateX(120%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-120%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade-down {
-  0% {
-    opacity: 0;
-    transform: translateY(120%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(-120%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -101,76 +48,6 @@
   }
 }
 
-@keyframes fade-zoom-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-120%) scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-@keyframes fade-zoom-right {
-  0% {
-    opacity: 0;
-    transform: translateX(120%) scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-@keyframes smoke {
-  0% {
-    opacity: 0;
-    transform: translate(40px, -100px);
-    filter: blur(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-    filter: blur(0);
-  }
-}
-
-@keyframes drag {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(7px);
-  }
-  75% {
-    transform: translateX(-7px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes blur {
-  0% {
-    filter: blur(100px);
-    opacity: 0;
-  }
-
-  100% {
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes brightness {
-  0% {
-    filter: brightness(0);
-  }
-  100% {
-    opacity: 1;
-    filter: brightness(100%);
-  }
-}
 
 @keyframes pulse {
   0% {
@@ -189,26 +66,6 @@
     border-radius: 50%;
     opacity: 1;
 
-  }
-}
-
-@keyframes glitch {
-  1% {
-    transform: rotateX(10deg) skewX(90deg);
-  }
-  2% {
-    transform: rotateX(0deg) skewX(0deg);
-  }
-}
-
-@keyframes noise-1 {
-  $steps: 30;
-  @for $i from 1 through $steps {
-    #{percentage($i*(1/$steps))} {
-      $top: random(100);
-      $bottom: random(101 - $top);
-      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
-    }
   }
 }
 

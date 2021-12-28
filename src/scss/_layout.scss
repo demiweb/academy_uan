@@ -38,6 +38,12 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
 
+  span {
+    font-size: 40px;
+    line-height: 54px;
+    font-weight: 700;
+  }
+
   a {
     color: $blue;
     font-size: 18px;
@@ -77,13 +83,16 @@ body {
   }
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
 h2 {
   font-size: 40px;
   line-height: 54px;
   font-weight: 700;
-  span {
-    display: inline-block;
-  }
 }
 
 h3 {
@@ -107,6 +116,20 @@ h3 {
 }
 
 @media screen and (max-width: 991px) {
+  .section-head {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .section-head-pages {
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 32px;
+      line-height: 44px
+    }
+  }
+
   h2 {
     font-size: 32px;
     line-height: 44px

@@ -3,8 +3,6 @@
 .error-block {
   min-height: 600px;
   height: 80vh;
-  overflow-x: hidden;
-
 }
 
 .error-block__wrapper {
@@ -19,26 +17,13 @@
     align-items: center;
     justify-content: center;
 
-    .glitch {
-      color: $blue;
-      position: relative;
+    span {
+      background: linear-gradient(95.66deg, #65A5FF 34.2%, #188FD2 111.88%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 150px;
       line-height: 204px;
       font-weight: 700;
-      animation: glitch 5s 5s infinite;
-    }
-
-    .glitch::before {
-      content: attr(data-text);
-      position: absolute;
-      left: -2px;
-      text-shadow: -3px 0 rgba(177,30,0,0.53);
-      opacity: .7;
-      background: transparent;
-      overflow: hidden;
-      top: 0;
-      animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
-      z-index: 100;
     }
 
     h1 {
