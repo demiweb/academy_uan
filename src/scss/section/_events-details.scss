@@ -5,8 +5,7 @@
   position: relative;
 
   .course-details__speakers {
-    padding: 80px 75px 150px;
-
+    padding: 0 75px 75px 0;
   }
 }
 
@@ -80,6 +79,109 @@
     max-width: 407px;
     height: 50px;
     min-width: 300px;
+  }
+}
+
+.events-swiper {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.events-swiper__slide {
+  background: #fff;
+  box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  border-radius: 10px;
+  transition: all .4s ease;
+
+  &:hover {
+    box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .content {
+    padding: 25px 20px 30px;
+
+    .date {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+
+    .title {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .text {
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    > a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+
+      &:hover {
+        span {
+          color: $green;
+        }
+
+        svg {
+          path {
+            stroke: $green;
+          }
+        }
+      }
+
+      span {
+        margin-right: 20px;
+        color: $blue;
+        transition: all .4s ease;
+      }
+
+      svg {
+        path {
+          stroke: $blue;
+          transition: all .4s ease;
+        }
+      }
+    }
+  }
+
+  &.events-self-ended {
+    .content {
+      > a {
+        span {
+          color: $green;
+        }
+
+        svg {
+          path {
+            stroke: #FFFFFF;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1439px) {

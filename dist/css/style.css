@@ -5401,6 +5401,10 @@ h3 {
   width: 100%;
 }
 
+.authorization-right .tabs__content form .nice-select .multiple-options {
+  overflow-x: auto;
+}
+
 .authorization-right .tabs__content button {
   width: 100%;
   height: 50px;
@@ -5594,7 +5598,7 @@ h3 {
 }
 
 .events-details .course-details__speakers {
-  padding: 80px 75px 150px;
+  padding: 0 75px 75px 0;
 }
 
 .events-details__body {
@@ -5682,6 +5686,113 @@ h3 {
   max-width: 407px;
   height: 50px;
   min-width: 300px;
+}
+
+.events-swiper {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.events-swiper__slide {
+  background: #fff;
+  -webkit-box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+          box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.events-swiper__slide:hover {
+  -webkit-box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+          box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+}
+
+.events-swiper__slide .img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.events-swiper__slide .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.events-swiper__slide .content {
+  padding: 25px 20px 30px;
+}
+
+.events-swiper__slide .content .date {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #7D8185;
+}
+
+.events-swiper__slide .content .title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.events-swiper__slide .content .text {
+  color: #7D8185;
+  margin-bottom: 20px;
+}
+
+.events-swiper__slide .content > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+}
+
+.events-swiper__slide .content > a:hover span {
+  color: #34a360;
+}
+
+.events-swiper__slide .content > a:hover svg path {
+  stroke: #34a360;
+}
+
+.events-swiper__slide .content > a span {
+  margin-right: 20px;
+  color: #136FF0;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.events-swiper__slide .content > a svg path {
+  stroke: #136FF0;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.events-swiper__slide.events-self-ended .content > a span {
+  color: #34a360;
+}
+
+.events-swiper__slide.events-self-ended .content > a svg path {
+  stroke: #FFFFFF;
 }
 
 .guidlines {
