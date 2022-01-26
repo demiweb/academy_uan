@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+      integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.min.css">
+
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="img/svg/header-logo.svg" alt="logo">
+            </div>
+            <div class="header__cart">
+                <a href="#">
+                    Cart
+                    <span class="no-empty">
+                        2
+                    </span>
+                </a>
+            </div>
+            <div class="header__menu">
+                <span>
+
+                </span>
+            </div>
+            <div class="menu__content">
+                <div class="menu__wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">Topics</a>
+                        </li>
+                        <li>
+                            <a href="#">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="header__cart">
+                        <a href="#">
+                            Cart
+                            <span class="no-empty">
+                             2
+                         </span>
+                        </a>
+                    </div>
+                    <div class="header__btn logout">
+                        <div class="profile">
+                            <img src="img/svg/Profile.svg" alt="profile">
+                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.19169 7.84623C5.33516 8.05126 5.66484 8.05126 5.80831 7.84623L10.9425 0.509178C11.0969 0.288496 10.9222 0 10.6342 0H0.365821C0.0777718 0 -0.0969126 0.288495 0.0575126 0.509178L5.19169 7.84623Z"
+                                      fill="#3A3A46"/>
+                            </svg>
+                        </div>
+                        <div class="profile__menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Profile
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        My courses
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        My certificates
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Log out
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__language">
+                        <img src="img/language-icon.png" alt="language_eu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="our-partners bg-grey">
+        <div class="container">
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Main Page</span>
+                        </a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses/real">
+                            <span itemprop="name">Our Partners</span></a>
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                </ol>
+            </div>
+            <div class="section-head-pages">
+                <h1>
+                    Our Partners
+                </h1>
+            </div>
+            <div class="our-partners__body">
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-3.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-5.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-6.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-6.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bg"
+         style="background: url('img/footer-bg-left.png') no-repeat left top 100%,
+          url('img/footer-bg-right.png') no-repeat right bottom 100%">
+    </div>
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__logo">
+                <img src="img/svg/footer-logo.svg" alt="logo">
+            </div>
+            <div class="footer__nav accordion">
+                <span class="list__title accordion-title">
+                    Topics
+                     <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <circle cx="11" cy="11.5" r="11" fill="#136FF0"/>
+                         <path d="M6.6247 9.21913C6.19343 8.87412 5.56414 8.94404 5.21913 9.3753C4.87412 9.80657 4.94404 10.4359 5.3753 10.7809L6.6247 9.21913ZM16.6247 10.7809C17.056 10.4359 17.1259 9.80657 16.7809 9.3753C16.4359 8.94404 15.8066 8.87412 15.3753 9.21913L16.6247 10.7809ZM11 14L10.3753 14.7809L11 15.2806L11.6247 14.7809L11 14ZM5.3753 10.7809L10.3753 14.7809L11.6247 13.2191L6.6247 9.21913L5.3753 10.7809ZM11.6247 14.7809L16.6247 10.7809L15.3753 9.21913L10.3753 13.2191L11.6247 14.7809Z"
+                               fill="white"/>
+                     </svg>
+                </span>
+                <ul class="accordion-content">
+                    <li><a href="#">Functional</a></li>
+                    <li><a href="#">Neuro - oncology</a></li>
+                    <li><a href="#">Radiosurgery</a></li>
+                    <li><a href="#">Pediatric</a></li>
+                    <li><a href="#">Spine</a></li>
+                    <li><a href="#">Trauma</a></li>
+                    <li><a href="#">Vascular</a></li>
+                    <li><a href="#">Peripheral nerve</a></li>
+                    <li><a href="#">Skull base</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav accordion">
+                <span class="list__title accordion-title">
+                    Sitemap
+                     <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11.5" r="11" fill="#136FF0"/>
+                        <path d="M6.6247 9.21913C6.19343 8.87412 5.56414 8.94404 5.21913 9.3753C4.87412 9.80657 4.94404 10.4359 5.3753 10.7809L6.6247 9.21913ZM16.6247 10.7809C17.056 10.4359 17.1259 9.80657 16.7809 9.3753C16.4359 8.94404 15.8066 8.87412 15.3753 9.21913L16.6247 10.7809ZM11 14L10.3753 14.7809L11 15.2806L11.6247 14.7809L11 14ZM5.3753 10.7809L10.3753 14.7809L11.6247 13.2191L6.6247 9.21913L5.3753 10.7809ZM11.6247 14.7809L16.6247 10.7809L15.3753 9.21913L10.3753 13.2191L11.6247 14.7809Z"
+                              fill="white"/>
+                    </svg>
+                </span>
+                <ul class="accordion-content">
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav accordion">
+                <span class="list__title accordion-title">
+                    Support
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11.5" r="11" fill="#136FF0"/>
+                        <path d="M6.6247 9.21913C6.19343 8.87412 5.56414 8.94404 5.21913 9.3753C4.87412 9.80657 4.94404 10.4359 5.3753 10.7809L6.6247 9.21913ZM16.6247 10.7809C17.056 10.4359 17.1259 9.80657 16.7809 9.3753C16.4359 8.94404 15.8066 8.87412 15.3753 9.21913L16.6247 10.7809ZM11 14L10.3753 14.7809L11 15.2806L11.6247 14.7809L11 14ZM5.3753 10.7809L10.3753 14.7809L11.6247 13.2191L6.6247 9.21913L5.3753 10.7809ZM11.6247 14.7809L16.6247 10.7809L15.3753 9.21913L10.3753 13.2191L11.6247 14.7809Z"
+                              fill="white"/>
+                    </svg>
+                </span>
+                <ul class="accordion-content">
+                    <li><a href="tel:">+38 (092) 38 283 93</a></li>
+                    <li><a href="mailto:">AcademyUan@gmail.com</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Contract offer</a></li>
+                    <li><a href="#">Return policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                © AcademyUan. All rights reserved
+            </div>
+            <div class="footer__social-networks">
+                <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                              fill="url(#paint0_linear_182_56)"/>
+                        <path d="M13.0667 23.3332C12.5483 23.3332 12.6364 23.1375 12.4576 22.6439L10.9333 17.6273L22.6667 10.6665"
+                              fill="#C8DAEA"/>
+                        <path d="M13.0667 23.3335C13.4667 23.3335 13.6434 23.1505 13.8667 22.9335L16 20.8591L13.3389 19.2544"
+                              fill="#A9C9DD"/>
+                        <path d="M13.3386 19.2547L19.7866 24.0185C20.5224 24.4245 21.0535 24.2143 21.2368 23.3354L23.8614 10.967C24.1301 9.88963 23.4507 9.40099 22.7468 9.72056L7.33484 15.6634C6.28283 16.0853 6.28896 16.6722 7.14308 16.9338L11.0981 18.1682L20.2545 12.3915C20.6868 12.1294 21.0835 12.2703 20.7579 12.5593"
+                              fill="url(#paint1_linear_182_56)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_182_56" x1="12.0016" y1="1.3344" x2="4.0016" y2="20"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#37AEE2"/>
+                                <stop offset="1" stop-color="#1E96C8"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_182_56" x1="13.997" y1="16.9828" x2="15.7066"
+                                            y2="22.5128" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EFF7FC"/>
+                                <stop offset="1" stop-color="white"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                              fill="#FF0000"/>
+                        <path d="M24.1768 12.0488C23.9805 11.2948 23.4022 10.701 22.6679 10.4995C21.3371 10.1333 16.0001 10.1333 16.0001 10.1333C16.0001 10.1333 10.6632 10.1333 9.3323 10.4995C8.59795 10.701 8.01962 11.2948 7.82335 12.0488C7.4668 13.4153 7.4668 16.2666 7.4668 16.2666C7.4668 16.2666 7.4668 19.1178 7.82335 20.4845C8.01962 21.2385 8.59795 21.8322 9.3323 22.0338C10.6632 22.4 16.0001 22.4 16.0001 22.4C16.0001 22.4 21.3371 22.4 22.6679 22.0338C23.4022 21.8322 23.9805 21.2385 24.1768 20.4845C24.5335 19.1178 24.5335 16.2666 24.5335 16.2666C24.5335 16.2666 24.5335 13.4153 24.1768 12.0488Z"
+                              fill="white"/>
+                        <path d="M14.3999 19.2V13.8667L18.6666 16.5335L14.3999 19.2Z" fill="#FF0000"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                              fill="#3B5998"/>
+                        <path d="M17.6676 25.4077V16.7028H20.0706L20.389 13.7031H17.6676L17.6717 12.2017C17.6717 11.4193 17.7461 11.0001 18.8698 11.0001H20.372V8H17.9687C15.082 8 14.066 9.4552 14.066 11.9024V13.7034H12.2666V16.7031H14.066V25.4077H17.6676Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+        integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -41,7 +41,7 @@ function scss() {
         .pipe(rename({
             extname: '.min.css'
         }))
-        .pipe(dest('dist/css'))
+        .pipe(dest('dist/css/'))
 }
 
 function js() {

@@ -462,4 +462,6 @@ if (!animate.length) {
     }
 }
 
-
+$(document).ready(function() {
+    $('select').niceSelect();
+});

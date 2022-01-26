@@ -1,0 +1,132 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.events-details {
+  position: relative;
+
+  .course-details__speakers {
+    padding: 80px 75px 150px;
+
+  }
+}
+
+.events-details__body {
+  display: flex;
+  padding: 0 0 80px;
+}
+
+.events-details-left {
+  width: 41.62%;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  p {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+}
+
+.events-details-right {
+  width: 58.38%;
+  margin-left: 30px;
+
+  p, > span {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  > span {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 30px;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      svg {
+        margin-right: 15px;
+        flex: 0 0 18px;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 1.45;
+        font-weight: 600;
+      }
+    }
+  }
+
+  a {
+    max-width: 407px;
+    height: 50px;
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .events-details {
+    .course-details__speakers {
+      padding: 80px 20px 150px;
+      .speakers {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  .events-details__body {
+    flex-wrap: wrap;
+  }
+
+
+  .events-details-left {
+    width: 100%;
+
+    img {
+
+    }
+  }
+
+  .events-details-right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+
+  .events-details-right {
+    a {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+}

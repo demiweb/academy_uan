@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @@include('./parts/links.html')
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+@@include('./parts/header-logout.html')
+
+<main>
+    <section class="our-partners bg-grey">
+        <div class="container">
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Main Page</span>
+                        </a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses/real">
+                            <span itemprop="name">Our Partners</span></a>
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                </ol>
+            </div>
+            <div class="section-head-pages">
+                <h1>
+                    Our Partners
+                </h1>
+            </div>
+            <div class="our-partners__body">
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-3.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-5.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-6.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-4.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-6.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partner-self">
+                        <img src="img/svg/partner-icon-2.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./parts/footer.html')
+
+@@include('./parts/scripts.html')
+
+</body>
+</html>

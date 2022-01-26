@@ -1,0 +1,128 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.events {
+  position: relative;
+
+}
+
+.events__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  padding: 0 0 50px;
+}
+
+.events-self {
+  width: calc((100% / 3) - (60px / 3));
+  background: #FFFFFF;
+  box-shadow: 0 30px 30px rgba(37, 65, 138, 0.05);
+  border-radius: 10px;
+  transition: all .4s ease;
+
+  &:hover {
+    box-shadow: 0 16px 32px rgba(26, 56, 132, 0.14);
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .content {
+    padding: 25px 20px 30px;
+
+    .date {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+
+    .title {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .text {
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    > a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+
+      &:hover {
+        span {
+          color: $green;
+        }
+
+        svg {
+          path {
+            stroke: $green;
+          }
+        }
+      }
+
+      span {
+        margin-right: 20px;
+        color: $blue;
+        transition: all .4s ease;
+      }
+
+      svg {
+        path {
+          stroke: $blue;
+          transition: all .4s ease;
+        }
+      }
+    }
+  }
+
+  &.events-self-ended {
+    .content {
+      > a {
+        span {
+          color: $green;
+        }
+
+        svg {
+          path {
+            stroke: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .events-self {
+    width: calc((100% / 2) - (30px / 2));
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .events__wrapper {
+    gap: 20px;
+  }
+  .events-self {
+    width: 100%;
+  }
+}

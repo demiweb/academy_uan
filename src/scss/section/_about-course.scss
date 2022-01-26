@@ -41,6 +41,7 @@
       .speaker {
         width: 100%;
         flex: 0 0 100%;
+        display: flex;
 
         &:not(:last-child) {
           margin-bottom: 50px;

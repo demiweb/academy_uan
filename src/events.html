@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @@include('./parts/links.html')
+
+    <title>AcademyUan</title>
+</head>
+<body>
+
+<!-- Подключение header для пользователей которые залогинились-->
+@@include('./parts/header-logout.html')
+
+<main>
+    <section class="events bg-grey">
+        <div class="page-section-bg">
+            <img src="img/page-section-bg.png" alt="page-section-bg" class="lazyload">
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses">
+                            <span itemprop="name">Main Page</span></a>
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#136FF0" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <meta itemprop="position" content="1"/>
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://example.com/dresses/real">
+                            <span itemprop="name">Events</span></a>
+                        <meta itemprop="position" content="2"/>
+                    </li>
+                </ol>
+            </div>
+            <div class="section-head-pages">
+                <h1>
+                    Events
+                </h1>
+            </div>
+            <div class="slider-swiper-wrapper">
+                <div class="swiper themes-slider">
+                    <div class="swiper-wrapper themes-slider__wrapper">
+                        <div class="swiper-slide themes-slider__slide"><a href="#" class="current">All events</a></div>
+                        <div class="swiper-slide themes-slider__slide"><a href="#">Future events</a></div>
+                        <div class="swiper-slide themes-slider__slide"><a href="#">Past events</a></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev themes-slider-button-prev def-button-prev">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 15L1.5 8L8.5 1" stroke="#3A3A46" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next themes-slider-button-next def-button-next">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L8.5 8L1.5 15" stroke="#3A3A46" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="events__wrapper">
+                <div class="events-self">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                       <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Register now
+                        </span>
+                            <svg width="51" height="8" viewBox="0 0 51 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.8417 50.3536 3.64644L47.1716 0.464462C46.9763 0.2692 46.6597 0.2692 46.4645 0.464462C46.2692 0.659724 46.2692 0.976307 46.4645 1.17157L49.2929 4L46.4645 6.82842C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.73079 46.9763 7.73079 47.1716 7.53553L50.3536 4.35355ZM4.37114e-08 4.5L50 4.5L50 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="events-self">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                       <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Register now
+                        </span>
+                            <svg width="51" height="8" viewBox="0 0 51 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.8417 50.3536 3.64644L47.1716 0.464462C46.9763 0.2692 46.6597 0.2692 46.4645 0.464462C46.2692 0.659724 46.2692 0.976307 46.4645 1.17157L49.2929 4L46.4645 6.82842C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.73079 46.9763 7.73079 47.1716 7.53553L50.3536 4.35355ZM4.37114e-08 4.5L50 4.5L50 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="events-self">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                       <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Register now
+                        </span>
+                            <svg width="51" height="8" viewBox="0 0 51 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.8417 50.3536 3.64644L47.1716 0.464462C46.9763 0.2692 46.6597 0.2692 46.4645 0.464462C46.2692 0.659724 46.2692 0.976307 46.4645 1.17157L49.2929 4L46.4645 6.82842C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.73079 46.9763 7.73079 47.1716 7.53553L50.3536 4.35355ZM4.37114e-08 4.5L50 4.5L50 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="events-self events-self-ended">
+                    <div class="img">
+                        <img src="img/news-img-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <span class="date">
+                        23/02/2022
+                    </span>
+                        <span class="title">
+                        Difficult airways webinar
+                    </span>
+                        <p class="text">
+                            All intubation techniques will be practiced on professional manikins that simulate complex
+                            airways.
+                        </p>
+                        <a href="#">
+                        <span>
+                            Event ended
+                        </span>
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="23" height="23" rx="11.5" fill="#34A360"/>
+                                <path d="M16 8.75L10 14.25L7 11.5" stroke="white" stroke-width="2"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li>
+                        <a href="#" class="prev">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 15L1.5 8L8.5 1" stroke="#3A3A46" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <span class="current">2</span>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <span>...</span>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#" class="next">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L8.5 8L1.5 15" stroke="#3A3A46" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('./parts/footer.html')
+
+@@include('./parts/scripts.html')
+</body>
+</html>

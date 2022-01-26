@@ -41,7 +41,7 @@
                     <form>
                         <label>
                             E-mail
-                            <input type="email">
+                            <input type="email" placeholder="Cristina Bednar">
                         </label>
                         <label>
                             Password
@@ -60,12 +60,35 @@
                         </label>
                         <label>
                             E-mail
-                            <input type="email">
+                            <input type="email" placeholder="CrisBednar@gmail.com">
                         </label>
                         <label>
                             Phone
-                            <input type="tel">
+                            <input type="tel" placeholder="+38 (093) 11 893 98">
                         </label>
+                        <div>
+                            <label for="country">
+                                Country
+                            </label>
+                            <select id="country">
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Poland">Poland</option>
+                                <option value="France">France</option>
+                                <option value="Switzerland">Switzerland</option>
+                            </select>
+                        </div>
+                        <label>
+                            Date of birth
+                            <input type="date">
+                        </label>
+                        <div>
+                            <label for="fields-of-interest">Fields of interest</label>
+                            <select id="fields-of-interest">
+                                <option value="Fields-1">Fields-1</option>
+                                <option value="Fields-2">Fields-2</option>
+                                <option value="Fields-3">Fields-3</option>
+                            </select>
+                        </div>
                         <label>
                             Password
                             <input type="password">
@@ -73,6 +96,17 @@
                         <label>
                             Confirm password
                             <input type="password">
+                        </label>
+                        <p>
+                            Membership in UAN
+                        </p>
+                        <label>
+                            <input type="radio" name="membership" checked>
+                            I am member of UAN
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" >
+                            I am not the member of UAN
                         </label>
                         <button type="submit" class="btn-blue">
                             Create account
